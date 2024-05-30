@@ -1,0 +1,8 @@
+<routes>
+	<include file="vehicleTypes.add.xml"/>
+	
+	<route id="test" edges="29377703#2 303412427#2 303412427#3 303412427#7 303412427#9 -562502804#1"/>
+	
+	<vehicle id="trad1" type="traditional_jeepney" depart="10"/>
+
+</routes>
