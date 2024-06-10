@@ -1,41 +1,41 @@
-import os
-import sys
-if 'SUMO_HOME' in os.environ:
-    print(os.environ['SUMO_HOME'])
-    sys.path.append(os.path.join(os.environ['SUMO_HOME'], 'tools'))
-else:
-    sys.exit("Environment variable 'SUMO_HOME' not found")
+# import os
+# import sys
+# if 'SUMO_HOME' in os.environ:
+#     print(os.environ['SUMO_HOME'])
+#     sys.path.append(os.path.join(os.environ['SUMO_HOME'], 'tools'))
+# else:
+#     sys.exit("Environment variable 'SUMO_HOME' not found")
 
-import traci
-import logging
+# import traci
+# import logging
 
-sumoBinary = "sumo-gui"
-sumoCmd  = [sumoBinary, 
-            "-c", "config.sumo.cfg",
-            "-d", "200"]
+# sumoBinary = "sumo-gui"
+# sumoCmd  = [sumoBinary, 
+#             "-c", "config.sumo.cfg",
+#             "-d", "200"]
 
-logging.basicConfig(level=logging.DEBUG)
+# logging.basicConfig(level=logging.DEBUG)
 
-try:
-    # Start SUMO as a subprocess and connect to it with TRACI
+# try:
+    
    
-    traci.start(sumoCmd)
-    step = 0
-    while step < 10000:  # Number of simulation steps
-        traci.simulationStep()  # Advance the simulation by one step
+#     traci.start(sumoCmd)
+#     step = 0
+#     while step < 10000: 
+#         traci.simulationStep()  
 
-        # Get the current simulation time
-        sim_time = traci.simulation.getTime()
+      
+#         sim_time = traci.simulation.getTime()
 
-        # Example: Get the list of vehicle IDs currently in the simulation
-        vehicle_ids = traci.vehicle.getIDList()
+   
+#         vehicle_ids = traci.vehicle.getIDList()
 
-        # Example: Print vehicle IDs and their positions
-        for vehicle_id in vehicle_ids:
-            position = traci.vehicle.getPosition(vehicle_id)
-            print(f"Vehicle {vehicle_id} is at position {position} at time {sim_time}")
+       
+#         for vehicle_id in vehicle_ids:
+#             position = traci.vehicle.getPosition(vehicle_id)
+#             print(f"Vehicle {vehicle_id} is at position {position} at time {sim_time}")
 
-        step += 1
-finally:
-    # Close the connection to SUMO
-    traci.close()
+#         step += 1
+# finally:
+   
+#     traci.close()
