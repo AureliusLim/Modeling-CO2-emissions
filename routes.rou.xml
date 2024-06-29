@@ -1,8 +1,0 @@
-<routes>
-	<include file="vehicleTypes.xml"/>
-	
-	<route id="test" edges="29377703#2 303412427#2 303412427#3 303412427#7 303412427#9 -562502804#1"/>
-	
-	<vehicle id="trad1" type="traditional_jeepney" depart="10"/>
-	<flow id="flow1" type="traditional_jeepney" begin="0" end="9999" from="1068364362" end="-840031281" number="2000"/>
-</routes>
