@@ -1,0 +1,22 @@
+Ensure that you have sumo gui, pip, traci, jinja2
+
+pip install traci jinja2
+
+config.sumo.cfg - used by sumo gui
+fullroute.net.xml - contains the converted osm into a network file
+
+
+genericVehicle.xml - contains regular vehicle definitions
+jeepTypes.xml - contains jeepney definitions
+
+neteditconfig.rou.xml - contains the route that the jeep follows as well as the initialization of each jeepney
+
+randomtrips.rou.xml - contains the route of the other vehicles in the network
+
+person_trip.rou.xml - simulates the route of the passengers
+
+jeep_generator.py - responsible for generating the route of each jeepney, it is called in the neteditconfig.rou.xml
+
+generatePersonTrip.py - responsible for generating the route of each passenger
+
+

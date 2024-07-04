@@ -1,3 +1,8 @@
-<vType id="car" accel="1.0" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="33.33" guiShape="passenger"/>
-<vType id="bus" accel="0.8" decel="4.0" sigma="0.5" length="12.0" minGap="2.5" maxSpeed="22.22" guiShape="bus"/>
-<vType id="truck" accel="0.6" decel="3.0" sigma="0.5" length="10.0" minGap="2.5" maxSpeed="25.0" guiShape="truck"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<additional>
+    <vType id="car" accel="1.0" decel="4.5" sigma="0.5" length="5.0" minGap="2.5" maxSpeed="33.33" guiShape="passenger" color="1,0,0" />
+    <vType id="bus" accel="0.8" decel="4.0" sigma="0.5" length="12.0" minGap="2.5" maxSpeed="22.22" guiShape="bus" color="1,0.5,0" />
+    <vType id="truck" accel="0.6" decel="3.0" sigma="0.5" length="10.0" minGap="2.5" maxSpeed="25.0" guiShape="truck" color="0.5,0.5,0.5" />
+    <vType id="motorcycle" accel="3.0" decel="6.0" sigma="0.5" length="2" minGap="1.5" maxSpeed="30" color="0.5,0,1" />
+    <vType id="bicycle" accel="1.5" decel="3.0" sigma="0.5" length="2" minGap="1.5" maxSpeed="15" color="0,1,1"  />
+</additional>
