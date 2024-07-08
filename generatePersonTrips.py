@@ -61,6 +61,8 @@ edges = [
 # Create the root element of the XML
 routes = ET.Element("routes")
 
+# Define personFlow element
+
 # Create passengers with spawn and destination
 for idx in range(len(edges) - 1):
     person = ET.SubElement(routes, "person", id=f"person_{idx}", depart="0.00", departLane="random", departSpeed="1.00")
@@ -69,7 +71,7 @@ for idx in range(len(edges) - 1):
     walk1 = ET.SubElement(person, "walk", edges=f"{edges[idx]}", speed="1.5", color="0,1,0")
     
     # Riding phase
-    ride = ET.SubElement(person, "ride", lines="r_1", fromEdge=edges[idx], to=edges[idx + 1], departPos="last", color="0,0,1")
+    ride = ET.SubElement(person, "ride", line="trad_line", fromEdge=edges[idx], to=edges[idx + 1],  color="0,0,1")
     
     # Walking phase to destination
     walk2 = ET.SubElement(person, "walk", edges=f"{edges[idx + 1]}", speed="1.5", color="0,1,0")

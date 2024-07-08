@@ -14,67 +14,38 @@ jeepney_route_edges_list = jeepney_route_edges.split()
 # Global counter for passenger IDs
 passenger_counter = 0
 
-# Define a maximum allowed distance for spawning passengers
-MAX_DISTANCE = 50.0  # Adjust this value as needed
-
-# Function to check if an edge is valid for pedestrians and within jeepney route
-def is_valid_edge_for_pedestrian(edge_id):
-    try:
-        # Check if the edge is in the jeepney route edges
-        if edge_id not in jeepney_route_edges:
-            return False
-        
-        # Check if at least one lane allows pedestrians
-        lane_count = traci.edge.getLaneNumber(edge_id)
-        for lane_index in range(lane_count):
-            lane_id = f"{edge_id}_{lane_index}"
-            allowed_types = traci.lane.getAllowed(lane_id)
-            if "pedestrian" in allowed_types:
-                return True
-        
-        return False
-    except traci.exceptions.TraCIException as e:
-        print(f"Error in is_valid_edge_for_pedestrian({edge_id}): {e}")
-        return False
-
-# Function to add passengers dynamically
-def add_passenger(passenger_id, start_edge, end_edge):
-    global passenger_counter
-
-    try:
-        # Adding a walking stage to start
-        traci.person.add(passenger_id, start_edge, pos=0.0)
-        traci.person.appendWalkingStage(passenger_id, end_edge, arrivalPos=1.0, edges=[end_edge])
-
-        # Adding a driving stage to the jeepney route
-        traci.person.appendDrivingStage(passenger_id, end_edge, lines="traditional_jeepney")
-        
-        # Adding a walking stage at the end
-        traci.person.appendWalkingStage(passenger_id, end_edge, arrivalPos=1.0, edges=[end_edge])
-
-        passenger_counter += 1
-    except traci.exceptions.TraCIException as e:
-        print(f"Error adding passenger {passenger_id}: {e}")
+# Dictionary to track which jeepneys are assigned stops for which passengers
+jeepney_stop_assignments = {}
 
 # Main simulation loop
 def simulate():
     global passenger_counter
 
     try:
+        print("Starting simulation.")
+   
         step = 0
         while step < 10000:
             traci.simulationStep()
 
-            # Check if we should add a passenger
-            if random.random() < 0.05:  # Adjust probability as needed
-                start_edge = random.choice(jeepney_route_edges.split())
-                end_edge = random.choice(jeepney_route_edges.split())
-
-                if start_edge != end_edge and is_valid_edge_for_pedestrian(start_edge) and is_valid_edge_for_pedestrian(end_edge):
-                    passenger_id = f"passenger_{passenger_counter}"
-                    add_passenger(passenger_id, start_edge, end_edge)
+            if step % 10 == 0:
+                # Check for jeepneys and passengers on the same edge
+                for jeepney_id in traci.vehicle.getIDList():
+                    if "jeepney" in jeepney_id:
+                        jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
+                        for passenger_id in traci.person.getIDList():
+                            passenger_edge = traci.person.getRoadID(passenger_id)
+                            if jeepney_edge == passenger_edge:
+                                # Check if the jeepney is already assigned to stop for this passenger
+                                if jeepney_id not in jeepney_stop_assignments or jeepney_stop_assignments[jeepney_id] != passenger_id:
+                                    traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=10)
+                                    jeepney_stop_assignments[jeepney_id] = passenger_id
+                                    print(f"Jeepney {jeepney_id} set to stop at bus stop {jeepney_edge} for passenger {passenger_id}.")
+                                else:
+                                    print(f"Jeepney {jeepney_id} already assigned to stop for passenger {passenger_id}.")
 
             step += 1
+        print("Simulation ended.")
     except traci.exceptions.TraCIException as e:
         print(f"Error in simulation loop: {e}")
     finally:
