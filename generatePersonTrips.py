@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
-
+import random
 # Define the edges where passengers can spawn and alight
 edges = [
     "29377703#0", "29377703#1", "29377703#2", "29377703#3", "29377703#4",
@@ -57,32 +57,79 @@ edges = [
     "-303412427#2", "-303412427#1", "-303412427#0", "-29377703#4", "-29377703#3", "-29377703#2",
     "-29377703#1", "-29377703#0"
 ]
+edges_to_remove = [
+    "29377703#3", "29377703#0", "303412427#0", "303412427#4", "303412427#11", "303412427#19",
+    "368461882#2", "694268908", "82694445#0", "82694458#1", "575729552#0", "745183365#0",
+    "-575729108#4", "-4332734#5", "1148489399#0", "-917450542", "1182394700", "917450546#0",
+    "917450546#2", "136822584", "121188635", "1074607189#1", "5019952#0", "16174062#3",
+    "176435844#1", "176435844#6", "820063588", "945948203", "1171640558", "20816626#0",
+    "310627474#4", "136822570", "136822580#0", "136822587#2", "917450547#0", "917450547#2",
+    "4332734#5", "575729108#4", "745183363", "-82694458#1", "745183364#2", "-82694445#0",
+    "-694268908", "-368461882#2", "-303412427#19", "-303412427#11", "-303412427#4",
+    "-303412427#0", "-29377703#3", "-29377703#0"
+]
+edges = [edge for edge in edges if edge not in edges_to_remove]
+def prettify_element(element):
+    """Return a pretty-printed XML string for the Element."""
+    rough_string = ET.tostring(element, 'utf-8')
+    reparsed = minidom.parseString(rough_string)
+    return reparsed.toprettyxml(indent="  ")
 
-# Create the root element of the XML
-routes = ET.Element("routes")
+def generate_single_person_flow(route_file):
+    # Create the root element
+    routes = ET.Element('routes')
 
-# Define personFlow element
+    # # Generate a single person flow
+    # person_flow = ET.SubElement(routes, 'personFlow', attrib={
+    #     'id': 'personFlow_0',
+    #     'type': 'DEFAULT_PEDTYPE',
+    #     'begin': '0',
+    #     'end': '3600',
+    #     'number': '10',  # Adjust the number of persons if needed
+    #     'from': 'jposadas',
+    #     'to': 'quiapo'
+    # })
 
-# Create passengers with spawn and destination
-for idx in range(len(edges) - 1):
-    person = ET.SubElement(routes, "person", id=f"person_{idx}", depart="0.00", departLane="random", departSpeed="1.00")
-    
-    # Walking phase
-    walk1 = ET.SubElement(person, "walk", edges=f"{edges[idx]}", speed="1.5", color="0,1,0")
-    
-    # Riding phase
-    ride = ET.SubElement(person, "ride", line="trad_line", fromEdge=edges[idx], to=edges[idx + 1],  color="0,0,1")
-    
-    # Walking phase to destination
-    walk2 = ET.SubElement(person, "walk", edges=f"{edges[idx + 1]}", speed="1.5", color="0,1,0")
+    # Generate individual passengers
+    person_id_counter = 1
+    for _ in range(30):  # Adjust the number of passengers if needed
+        start_edge = random.choice(edges)
+        end_edge = random.choice(edges)
+        while start_edge == end_edge:
+            end_edge = random.choice(edges)
+        
+        person = ET.SubElement(routes, 'person', attrib={
+            'id': f'person_{person_id_counter}',
+            'depart':'0',
+            'departLane': 'random',
+            'departSpeed': '1.00'
+        })
+        
+        ET.SubElement(person, 'walk', attrib={
+            'from': start_edge,
+            'busStop': start_edge,  # Replace with actual bus stop names if available
+            'speed': '1.5',
+            'color': '0,1,0'
+        })
+        
+        ET.SubElement(person, 'ride', attrib={
+            'line': 'trad_line',
+            'busStop': start_edge,  # Replace with actual bus stop names if available
+            'to': end_edge,
+            'color': '0,0,1'
+        })
+        
+        ET.SubElement(person, 'walk', attrib={
+            'edges': end_edge,
+            'speed': '1.5',
+            'color': '0,1,0'
+        })
+        
+        person_id_counter += 1
 
-# Create an ElementTree object
-tree = ET.ElementTree(routes)
+    # Write to XML file
+    with open(route_file, 'w') as f:
+        f.write(prettify_element(routes))
 
-# Write the XML to a file with pretty formatting
-xml_str = ET.tostring(routes, encoding="unicode")
-dom = minidom.parseString(xml_str)
-pretty_xml_str = dom.toprettyxml()
-
-with open("passengers.rou.xml", "w") as f:
-    f.write(pretty_xml_str)
+# Generate the personFlows for the given route file
+generate_single_person_flow("person_flows.rou.xml")

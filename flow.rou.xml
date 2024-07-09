@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<routes>
+
+<person id="person_1" depart="0" departLane="random" departSpeed="1.00">
+    <walk from="29377703#1" busStop="29377703#1" speed="1.5" color="0,1,0"/>
+    <ride line="trad_line" busStop="29377703#1" to="29377703#4" color="0,0,1"/>
+    <walk edges="29377703#4" speed="1.5" color="0,1,0"/>
+  </person>
+
+  <person id="person_2" depart="0" departLane="random" departSpeed="1.00">
+    <walk from="29377703#1" busStop="29377703#1" speed="1.5" color="0,1,0"/>
+    <ride line="trad_line" busStop="29377703#1" to="924607337#0" color="0,0,1"/>
+    <walk edges="924607337#0" speed="1.5" color="0,1,0"/>
+  </person>
+
+
+</routes>
