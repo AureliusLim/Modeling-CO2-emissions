@@ -19,4 +19,5 @@ jeep_generator.py - responsible for generating the route of each jeepney, it is 
 
 generatePersonTrip.py - responsible for generating the route of each passenger
 
+(OUTDATED)
 

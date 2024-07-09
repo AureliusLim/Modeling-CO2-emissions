@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 import xml.dom.minidom as minidom
 import random
-# Define the edges where passengers can spawn and alight
+
 edges = [
     "29377703#0", "29377703#1", "29377703#2", "29377703#3", "29377703#4",
     "303412427#0", "303412427#1", "303412427#2", "303412427#3", "303412427#4",
@@ -79,17 +79,6 @@ def generate_single_person_flow(route_file):
     # Create the root element
     routes = ET.Element('routes')
 
-    # # Generate a single person flow
-    # person_flow = ET.SubElement(routes, 'personFlow', attrib={
-    #     'id': 'personFlow_0',
-    #     'type': 'DEFAULT_PEDTYPE',
-    #     'begin': '0',
-    #     'end': '3600',
-    #     'number': '10',  # Adjust the number of persons if needed
-    #     'from': 'jposadas',
-    #     'to': 'quiapo'
-    # })
-
     # Generate individual passengers
     person_id_counter = 1
     for _ in range(30):  # Adjust the number of passengers if needed
@@ -107,14 +96,14 @@ def generate_single_person_flow(route_file):
         
         ET.SubElement(person, 'walk', attrib={
             'from': start_edge,
-            'busStop': start_edge,  # Replace with actual bus stop names if available
+            'busStop': start_edge,  
             'speed': '1.5',
             'color': '0,1,0'
         })
         
         ET.SubElement(person, 'ride', attrib={
             'line': 'trad_line',
-            'busStop': start_edge,  # Replace with actual bus stop names if available
+            'busStop': start_edge,  
             'to': end_edge,
             'color': '0,0,1'
         })

@@ -1,10 +1,8 @@
 import traci
-import sumolib
-import random
-import math
+
 import xml.etree.ElementTree as ET
 # Start SUMO and connect to TraCI
-sumoBinary = "sumo-gui"  # or "sumo" for command line interface
+sumoBinary = "sumo-gui"  
 sumoCmd = [sumoBinary, "-c", "config.sumo.cfg"]
 traci.start(sumoCmd)
 
