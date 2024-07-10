@@ -10,35 +10,35 @@
       
         </vehicle>
     
-        <vehicle id="jeepney_2" type="traditional_jeepney" route="r_1" depart="20">
+        <vehicle id="jeepney_2" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_3" type="traditional_jeepney" route="r_1" depart="40">
+        <vehicle id="jeepney_3" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_4" type="traditional_jeepney" route="r_1" depart="60">
+        <vehicle id="jeepney_4" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_5" type="traditional_jeepney" route="r_1" depart="80">
+        <vehicle id="jeepney_5" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_6" type="traditional_jeepney" route="r_1" depart="100">
+        <vehicle id="jeepney_6" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_7" type="traditional_jeepney" route="r_1" depart="120">
+        <vehicle id="jeepney_7" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_8" type="traditional_jeepney" route="r_1" depart="140">
+        <vehicle id="jeepney_8" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
-        <vehicle id="jeepney_9" type="traditional_jeepney" route="r_1" depart="160">
+        <vehicle id="jeepney_9" type="traditional_jeepney" route="r_1" depart="0">
       
         </vehicle>
     
