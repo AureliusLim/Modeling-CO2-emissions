@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <routes>
-<personFlow id="pflow1_" begin="0" end="20" number="5" color="1,0,1">
+<!-- <personFlow id="pflow1_" begin="0" end="20" number="5" color="1,0,1">
 		<walk from="29377703#2" busStop="29377703#2"/>
 		<ride busStop="29377703#2" line="trad_line" to="16174062#4"/>
 		<walk to="16174062#4"/>
@@ -10,7 +10,7 @@
 		<walk from="176435844#3" busStop="176435844#3"/>
 		<ride busStop="176435844#3" line="trad_line" to="-29377703#2"/>
 		<walk to="-29377703#2"/>
-</personFlow>
+</personFlow> -->
 
 <person id="person_1" depart="0" departLane="random" departSpeed="1.00">
     <walk from="29377703#1" busStop="29377703#1" speed="1.5" color="0,1,0"/>
@@ -20,8 +20,8 @@
 
   <person id="person_2" depart="0" departLane="random" departSpeed="1.00">
     <walk from="29377703#1" busStop="29377703#1" speed="1.5" color="0,1,0"/>
-    <ride line="trad_line" busStop="29377703#1" to="924607337#0" color="0,0,1"/>
-    <walk edges="924607337#0" speed="1.5" color="0,1,0"/>
+    <stop busStop="29377703#1" duration="50"/>
+    <walk from="29377703#1" to="29377703#4" speed="1.5" color="0,1,0"/>
   </person>
 
 

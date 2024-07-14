@@ -2,6 +2,7 @@ import pandas as pd
 import glob
 from hmmlearn import hmm
 import numpy as np
+import joblib
 # Path to the directory containing CSV files
 csv_files_path = 'hmmdata/*.csv'
 
@@ -57,6 +58,7 @@ for i in range(1, len(combined_df)):
 sequences.append((combined_df.loc[start_idx:, ['Observed State', 'Passenger Load']].values, 
                   combined_df.loc[start_idx:, 'Hidden State'].values))
 
+print("sequences:", sequences)
 # Split sequences into observations and hidden states
 X = [seq[0] for seq in sequences]
 Y = [seq[1] for seq in sequences]
@@ -71,8 +73,11 @@ model.fit(X_combined, lengths)
 # Print model parameters
 print("Transition matrix")
 print(model.transmat_)
+print(model.score(X_combined))
 print("\nMeans and covariances of each hidden state")
 for i in range(len(hidden_states)):
     print("\nHidden state", i)
     print("Mean =", model.means_[i])
     print("Covariance matrix =\n", model.covars_[i])
+
+joblib.dump(model, 'trained_hmm_model.pkl')

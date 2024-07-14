@@ -1,10 +1,25 @@
 import traci
 import xml.etree.ElementTree as ET
+import joblib
+import numpy as np
+
+model = joblib.load('trained_hmm_model.pkl')
+hidden_state_map = {'Vehicle': 0, 'Passenger': 1, 'Stoplight': 2}
+observed_state_map = {'Go': 0, '1 Lane Right': 1, 'Load': 2, 'Stop': 3, '1 Lane Left': 4, 'Unload': 5, 'Wait': 6, '2 Lane Left': 7, '2 Lane Right': 8}
+def predict_next_state(model, current_obs):
+    next_state = model.predict(current_obs.reshape(1, -1))
+    return next_state[0]
+def get_most_probable_observed_state(hidden_state, model):
+    means = model.means_[hidden_state]
+    return np.argmax(means)
+
+
 
 # Start SUMO and connect to TraCI
 sumoBinary = "sumo-gui"
 sumoCmd = [sumoBinary, "-c", "config.sumo.cfg"]
 traci.start(sumoCmd)
+
 
 # Global counter for passenger IDs
 passenger_counter = 0
@@ -58,7 +73,7 @@ def simulate():
                     
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
 
-                    if jeepney_edge == '-29377703#0':
+                    if jeepney_edge == '-29377703#1':
                         print(f"Jeepney {jeepney_id} reached the last edge in its route.")
                         jeepney_id_list.remove(jeepney_id)
                     if not is_valid_road_edge(jeepney_edge):
