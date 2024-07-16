@@ -104,7 +104,10 @@ def simulate():
                    
                     if jeepney_edge == '-29377703#1' and step > 3000:
                         print(f"Jeepney {jeepney_id} reached the last edge in its route.")
-                        traditional_id_list.remove(jeepney_id)
+                        if jeepney_id in traditional_id_list:
+                            traditional_id_list.remove(jeepney_id)
+                        elif jeepney_id in modern_id_list:
+                            modern_id_list.remove(jeepney_id)
                     if not is_valid_road_edge(jeepney_edge):
                         continue
 
