@@ -102,27 +102,26 @@ def generate_single_person_flow(route_file):
                 'id': f'person_{person_id_counter}',
                 'depart': str(depart_time),
                 'departLane': 'random',
-                'departSpeed': '1.00'
+                'departSpeed': '1.00',
+                'color': '0,1,0'
             })
             
             ET.SubElement(person, 'walk', attrib={
                 'from': start_edge,
                 'busStop': start_edge,
                 'speed': '1.5',
-                'color': '0,1,0'
+                
             })
             
             ET.SubElement(person, 'ride', attrib={
                 'line': 'trad_line',
                 'busStop': start_edge,
                 'to': end_edge,
-                'color': '0,0,1'
             })
             
             ET.SubElement(person, 'walk', attrib={
                 'edges': end_edge,
                 'speed': '1.5',
-                'color': '0,1,0'
             })
         
         elif passenger_type == 'stander':
@@ -138,19 +137,18 @@ def generate_single_person_flow(route_file):
                 'id': f'person_{person_id_counter}',
                 'depart': str(depart_time),
                 'departLane': 'random',
-                'departSpeed': '1.00'
+                'departSpeed': '1.00',
+                'color': '1,0,1'
             })
             ET.SubElement(person, 'walk', attrib={
                 'from': start_edge,
                 'busStop': start_edge,
                 'speed': '1.5',
-                'color': '0,1,0'
             })
             
             ET.SubElement(person, 'stop', attrib={
                 'busStop': start_edge,
                 'duration': str(random.randint(30,600)),
-                'color': '0,0,1'
             })
         
         elif passenger_type == 'walker':
@@ -166,26 +164,24 @@ def generate_single_person_flow(route_file):
                 'id': f'person_{person_id_counter}',
                 'depart': str(depart_time),
                 'departLane': 'random',
-                'departSpeed': '1.00'
+                'departSpeed': '1.00',
+                'color': '1,0,0'
             })
             ET.SubElement(person, 'walk', attrib={
                 'from':start_edge,
                 'busStop':start_edge,
                 'speed': '1.5',
-                'color': '0,1,0'
             })
             
             ET.SubElement(person, 'stop', attrib={
                 'busStop': start_edge,
                 'duration': str(random.randint(30,600)),
-                'color': '0,0,1'
             })
 
             ET.SubElement(person, 'walk', attrib={
                 'from':start_edge,
                 'to':end_edge,
                 'speed': '1.5',
-                'color': '0,1,0'
             })
 
         people.append((depart_time, person))

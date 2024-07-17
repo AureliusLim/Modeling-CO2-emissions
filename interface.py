@@ -2,6 +2,7 @@ import numpy as np
 import traci
 import xml.etree.ElementTree as ET
 import joblib
+from rtree import index
 
 # Load the trained HMM model
 trad_model = joblib.load('trained_hmm_model.pkl')
@@ -13,7 +14,26 @@ observed_state_map = {'Go': 0, '1 Lane Right': 1, 'Load': 2, 'Stop': 3, '1 Lane 
 # Define reverse mappings for easy lookup
 reverse_hidden_state_map = {v: k for k, v in hidden_state_map.items()}
 reverse_observed_state_map = {v: k for k, v in observed_state_map.items()}
+# Initialize the spatial index
+spatial_index = index.Index()
 
+def populate_spatial_index():
+    for passenger_id in traci.person.getIDList():
+        passenger_edge = traci.person.getRoadID(passenger_id)
+        if is_valid_road_edge(passenger_edge):
+            passenger_position = traci.person.getPosition(passenger_id)
+            spatial_index.insert(passenger_id, (*passenger_position, *passenger_position))
+
+# Function to get nearby passengers using the spatial index
+def get_nearby_passengers(vehicle_id):
+    vehicle_position = traci.vehicle.getPosition(vehicle_id)
+    x, y = vehicle_position
+    # Define a bounding box around the vehicle for spatial query
+    bbox = (x - 50, y - 50, x + 50, y + 50)  # Adjust the bounding box size as needed
+    nearby_passengers = []
+    for passenger_id in spatial_index.intersection(bbox):
+        nearby_passengers.append(passenger_id)
+    return nearby_passengers
 # # # Function to sample the observed state for a given hidden state
 def sample_observed_state(hidden_state, model):
     means = model.means_[hidden_state]
@@ -88,6 +108,7 @@ def is_valid_road_edge(edge_id):
 
 midtrip_edge = '615456195'
 endtrip_edge = '16174062#0'
+nearby_passengers = []
 # Main simulation loop
 def simulate():
     try:
@@ -119,7 +140,8 @@ def simulate():
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traditional_id_list + modern_id_list:
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
-                    
+                    if step % 40 == 0:
+                        nearby_passengers = get_nearby_passengers(jeepney_id)
 
                     if jeepney_edge == '-29377703#1' and step > 3000:
                         print(f"Jeepney {jeepney_id} reached the last edge in its route.")
@@ -159,7 +181,7 @@ def simulate():
                     # Execute actions based on the next observed state
                     observed_state_name = reverse_observed_state_map[next_observed_state]
                   
-                    print(f'{jeepney_id} for {observed_state_name}')
+                    print(f'{jeepney_id}: {observed_state_name}')
                     if observed_state_name == 'Go':
                         traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
                     elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
@@ -172,32 +194,33 @@ def simulate():
                                         print(f"Error setting bus stop for jeepney {jeepney_id} at {jeepney_edge}: {e}")
 
                    
-                    # elif observed_state_name == '1 Lane Right':
+                    elif observed_state_name == '1 Lane Right':
                        
                         
-                    #     if current_lane > 0:
-                    #         #print(f'{jeepney_id} lane right')
-                    #         traci.vehicle.changeLaneRelative(jeepney_id, -1, 10.0)
-                    # elif observed_state_name == '1 Lane Left':
+                        if current_lane - 1 > 0:
+                            #print(f'{jeepney_id} lane right')
+                            traci.vehicle.changeLaneRelative(jeepney_id, -1, 10.0)
+                    elif observed_state_name == '1 Lane Left':
                      
-                    #     print(f'{jeepney_id} current_lane: {current_lane}, num_lanes: {num_lanes}')
-                    #     if current_lane + 1 < num_lanes - 1:
-                    #         print(f'{jeepney_id} lane left')
-                    #         traci.vehicle.changeLaneRelative(jeepney_id, 1, 10.0)
-                    # elif observed_state_name == '2 Lane Right':
+                        #print(f'{jeepney_id} current_lane: {current_lane}, num_lanes: {num_lanes}')
+                        if current_lane + 1 < num_lanes - 1:
+                            #print(f'{jeepney_id} lane left')
+                            traci.vehicle.changeLaneRelative(jeepney_id, 1, 10.0)
+                    elif observed_state_name == '2 Lane Right':
                         
-                    #     if current_lane > 1:
-                    #         #print(f'{jeepney_id} 2 lane right')
-                    #         traci.vehicle.changeLaneRelative(jeepney_id, -2, 10.0)
-                    # elif observed_state_name == '2 Lane Left' and step % 20 == 0:
+                        if current_lane - 1 > 1:
+                            #print(f'{jeepney_id} 2 lane right')
+                            traci.vehicle.changeLaneRelative(jeepney_id, -2, 10.0)
+                    elif observed_state_name == '2 Lane Left' and step % 20 == 0:
                         
-                    #     if current_lane + 1 < num_lanes - 2:
-                    #         print(f'{jeepney_id} 2 lane left')
-                    #         traci.vehicle.changeLaneRelative(jeepney_id, 2, 10.0)
+                        if current_lane + 1 < num_lanes - 2:
+                            #print(f'{jeepney_id} 2 lane left')
+                            traci.vehicle.changeLaneRelative(jeepney_id, 2, 10.0)
 
                     # Check if the jeepney can pick up passengers
                     if jeepney_passengers < jeepney_capacity:  # Check if jeepney is not full
-                        for passenger_id in traci.person.getIDList():
+                        #for passenger_id in traci.person.getIDList():
+                        for passenger_id in nearby_passengers:
                             passenger_edge = traci.person.getRoadID(passenger_id)
                             if not is_valid_road_edge(passenger_edge):
                                 continue
@@ -209,7 +232,7 @@ def simulate():
                                 if passenger_id not in jeepney_stop_assignments[jeepney_id]:
                                     try:
                                        
-                                        traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=15)
+                                        traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=10)
                                         jeepney_states[jeepney_id] =  {'hidden_state': hidden_state_map['Passenger'], 'observed_state': observed_state_map['Load']} 
                                         jeepney_stop_assignments[jeepney_id].append(passenger_id)
                                         print(f"Jeepney {jeepney_id} set to stop at bus stop {jeepney_edge} for passenger {passenger_id}.")
@@ -229,7 +252,7 @@ def simulate():
                     for jeepney_id, assigned_passengers in list(jeepney_stop_assignments.items()):
                         if passenger_id in assigned_passengers and traci.vehicle.getRoadID(jeepney_id) == current_edge:
                     
-                            traci.vehicle.setBusStop(jeepney_id, current_edge, duration=15)
+                            traci.vehicle.setBusStop(jeepney_id, current_edge, duration=10)
                             jeepney_states[jeepney_id] =  {'hidden_state': hidden_state_map['Passenger'], 'observed_state': observed_state_map['Unload']} 
                             print(f"Jeepney {jeepney_id} stopped at {jeepney_edge} for passenger {passenger_id}.")
                             jeepney_stop_assignments[jeepney_id].remove(passenger_id)
