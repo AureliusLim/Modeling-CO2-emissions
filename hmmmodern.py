@@ -3,6 +3,8 @@ import glob
 from hmmlearn import hmm
 import numpy as np
 import joblib
+from sklearn.model_selection import train_test_split
+
 # Path to the directory containing CSV files
 csv_files_path = 'hmmdatamodern/*.csv'
 
@@ -25,9 +27,9 @@ combined_df.to_csv('combined_data_modern.csv', index=False)
 print(combined_df.head())
 print(combined_df.shape)
 
-
 combined_df = combined_df.drop(columns=['Suddeness', 'TimeStamp', 'Driver Behavior', 'Reason for lane change', 'Remarks'])
 print(combined_df.isnull().sum())
+
 # Map passenger load to numerical values
 load_map = {'Low (0 - 33 %)': 0, 'Moderate (34 - 80 %)': 1, 'Full (81 - 100%)': 2}
 combined_df['Passenger Load'] = combined_df['Passenger Load'].map(load_map)
@@ -38,6 +40,7 @@ observed_states = combined_df['Observed State'].unique()
 
 hidden_state_map = {state: i for i, state in enumerate(hidden_states)}
 observed_state_map = {state: i for i, state in enumerate(observed_states)}
+
 # Print the mappings
 print("Hidden State Mapping:", hidden_state_map)
 print("Observed State Mapping:", observed_state_map)
@@ -45,7 +48,7 @@ print("Observed State Mapping:", observed_state_map)
 combined_df['Hidden State'] = combined_df['Hidden State'].map(hidden_state_map)
 combined_df['Observed State'] = combined_df['Observed State'].map(observed_state_map)
 
-# Split data into sequences
+# Split data into sequences based on passenger load changes
 sequences = []
 start_idx = 0
 
@@ -59,25 +62,36 @@ sequences.append((combined_df.loc[start_idx:, ['Observed State', 'Passenger Load
                   combined_df.loc[start_idx:, 'Hidden State'].values))
 
 print("sequences:", sequences)
+
 # Split sequences into observations and hidden states
 X = [seq[0] for seq in sequences]
 Y = [seq[1] for seq in sequences]
+
+# Perform train-test split
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+
 # Combine all sequences for fitting the model
-X_combined = np.concatenate(X)
-lengths = [len(x) for x in X]
+X_train_combined = np.concatenate(X_train)
+lengths_train = [len(x) for x in X_train]
 
 # Train a Gaussian HMM
 model = hmm.GaussianHMM(n_components=len(hidden_states), covariance_type="diag", n_iter=1000)
-model.fit(X_combined, lengths)
+model.fit(X_train_combined, lengths_train)
 
 # Print model parameters
 print("Transition matrix")
 print(model.transmat_)
-print(model.score(X_combined))
+print(model.score(X_train_combined))
 print("\nMeans and covariances of each hidden state")
 for i in range(len(hidden_states)):
     print("\nHidden state", i)
     print("Mean =", model.means_[i])
     print("Covariance matrix =\n", model.covars_[i])
 
+# Evaluate on test set
+X_test_combined = np.concatenate(X_test)
+lengths_test = [len(x) for x in X_test]
+print("\nTest set score:", model.score(X_test_combined, lengths_test))
+
+# Save the trained model
 joblib.dump(model, 'trained_hmm_model_modern.pkl')
