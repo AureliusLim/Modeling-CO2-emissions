@@ -81,7 +81,7 @@ def generate_single_person_flow(route_file):
 
     # Generate individual passengers
     person_id_counter = 1
-    for _ in range(100):  # Adjust the number of passengers if needed
+    for _ in range(200):  
         start_edge_idx = random.randint(0, len(edges) - 2)
         end_edge_idx = random.randint(start_edge_idx + 1, len(edges) - 1)
 
