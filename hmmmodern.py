@@ -4,7 +4,7 @@ from hmmlearn import hmm
 import numpy as np
 import joblib
 from sklearn.model_selection import train_test_split
-
+from scipy.stats import multivariate_normal
 # Path to the directory containing CSV files
 csv_files_path = 'hmmdatamodern/*.csv'
 
@@ -38,8 +38,8 @@ combined_df['Passenger Load'] = combined_df['Passenger Load'].map(load_map)
 hidden_states = combined_df['Hidden State'].unique()
 observed_states = combined_df['Observed State'].unique()
 
-hidden_state_map = {state: i for i, state in enumerate(hidden_states)}
-observed_state_map = {state: i for i, state in enumerate(observed_states)}
+hidden_state_map = {'Vehicle': 0, 'Passenger': 1, 'Stoplight': 2}
+observed_state_map = {'Go': 0, '1 Lane Right': 1, 'Load': 2, 'Stop': 3, '1 Lane Left': 4, 'Unload': 5, 'Wait': 6, '2 Lane Left': 7, '2 Lane Right': 8}
 
 # Print the mappings
 print("Hidden State Mapping:", hidden_state_map)
@@ -61,21 +61,21 @@ for i in range(1, len(combined_df)):
 sequences.append((combined_df.loc[start_idx:, ['Observed State', 'Passenger Load']].values, 
                   combined_df.loc[start_idx:, 'Hidden State'].values))
 
-print("sequences:", sequences)
+
 
 # Split sequences into observations and hidden states
 X = [seq[0] for seq in sequences]
 Y = [seq[1] for seq in sequences]
 
 # Perform train-test split
-X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2, random_state=42)
+X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.1, random_state=42)
 
 # Combine all sequences for fitting the model
 X_train_combined = np.concatenate(X_train)
 lengths_train = [len(x) for x in X_train]
 
 # Train a Gaussian HMM
-model = hmm.GaussianHMM(n_components=len(hidden_states), covariance_type="diag", n_iter=1000)
+model = hmm.GaussianHMM(n_components=len(hidden_states), covariance_type="diag", n_iter=1000, random_state=49)
 model.fit(X_train_combined, lengths_train)
 
 # Print model parameters
@@ -92,6 +92,15 @@ for i in range(len(hidden_states)):
 X_test_combined = np.concatenate(X_test)
 lengths_test = [len(x) for x in X_test]
 print("\nTest set score:", model.score(X_test_combined, lengths_test))
+
+print("\nEmission probabilities (probability of observing each state given each hidden state):")
+for i in range(len(hidden_states)):
+    print(f"\nHidden state {i}:")
+    for j, obs_state in enumerate(observed_states):
+        mean = model.means_[i]
+        covar = np.diag(model.covars_[i])  # Use diagonal covariance
+        prob = multivariate_normal.pdf([observed_state_map[obs_state]], mean=mean, cov=covar)
+        print(f"Probability of observing '{obs_state}' = {prob:.2e}")
 
 # Save the trained model
 joblib.dump(model, 'trained_hmm_model_modern.pkl')

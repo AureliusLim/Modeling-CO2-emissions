@@ -55,8 +55,7 @@ def predict_next_state_with_observation(model, current_hidden_state, observation
     # Get the transition probabilities for the current hidden state
     trans_probs = model.transmat_[current_hidden_state]
     
-    # Adjust transition probabilities based on the observation (e.g., passenger load)
-    # This is a simplified example; you might need a more sophisticated adjustment
+   
     passenger_load = observation[1]
     adjusted_probs = trans_probs * (1 + passenger_load / 10.0)  # Adjust based on load
     adjusted_probs /= np.sum(adjusted_probs)  # Normalize to ensure they sum to 1
@@ -132,7 +131,7 @@ def simulate():
                     co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
                 
                 # Process or save CO2 emissions data as needed
-                with open('Emission Output/co2_emissions.txt', 'a') as f:
+                with open('Emission Output/emissions.txt', 'a') as f:
                     f.write(f"Step {step}:\n")
                     for vehicle_id, co2 in co2_emissions.items():
                         f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
