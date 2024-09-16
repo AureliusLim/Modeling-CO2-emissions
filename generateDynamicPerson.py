@@ -86,8 +86,9 @@ def generate_single_person_flow(route_file):
     # Generate individual passengers
     person_id_counter = 1
     people = []
-    for _ in range(300):  # Adjust the number of passengers if needed
+    for _ in range(900):  # Adjust the number of passengers if needed
         passenger_type = random.choice(['rider', 'stander', 'walker'])
+        #passenger_type = 'stander'
         depart_time = random.randint(0, 500)
         if passenger_type == 'rider':
             start_edge_idx = random.randint(0, len(edges) - 2)

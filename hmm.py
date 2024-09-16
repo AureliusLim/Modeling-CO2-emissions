@@ -66,7 +66,7 @@ X_train_combined = np.concatenate(X_train)
 lengths_train = [len(x) for x in X_train]
 
 # Train a Gaussian HMM
-model = hmm.GaussianHMM(n_components=len(hidden_states), covariance_type="diag", n_iter=1000, random_state=780)
+model = hmm.GaussianHMM(n_components=len(hidden_states), covariance_type="full", n_iter=1000, random_state=42)
 model.fit(X_train_combined, lengths_train)
 
 # Print model parameters
