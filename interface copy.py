@@ -139,17 +139,18 @@ def simulate():
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traditional_id_list + modern_id_list:
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
+                   
                     if step % 40 == 0:
                         #nearby_passengers = get_nearby_passengers(jeepney_id)
                         # Get passengers on the same edge as the jeepney
                         passengers_on_edge = get_passengers_on_edge(jeepney_edge)
 
-                    if jeepney_edge == '-29377703#1' and step > 3000:
-                        print(f"Jeepney {jeepney_id} reached the last edge in its route.")
-                        if jeepney_id in traditional_id_list:
-                            traditional_id_list.remove(jeepney_id)
-                        elif jeepney_id in modern_id_list:
-                            modern_id_list.remove(jeepney_id)
+                    # if jeepney_edge == '-29377703#2' and step > 900:
+                    #     print(f"Jeepney {jeepney_id} reached the last edge in its route.")
+                    #     if jeepney_id in traditional_id_list:
+                    #         traditional_id_list.remove(jeepney_id)
+                    #     elif jeepney_id in modern_id_list:
+                    #         modern_id_list.remove(jeepney_id)
                     if not is_valid_road_edge(jeepney_edge):
                         continue
 
@@ -235,7 +236,7 @@ def simulate():
                                     jeepney_stop_assignments[jeepney_id] = []
 
                                 if passenger_id not in jeepney_stop_assignments[jeepney_id]:
-                                    #print(f"Passenger found nearby for Jeepney {jeepney_id}")
+                           
                                     try:
                                        
                                         traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=10)
@@ -283,21 +284,6 @@ def simulate():
                             print(f"passenger already removed {passenger_id}: {e}")
                         except ValueError as e:
                             print(f"Error removing passenger from jeepney's assignment: {e}")
-
-
-                    
-                    
-                    
-
-                    # for jeepney_id, assigned_passengers in list(jeepney_stop_assignments.items()):
-                    #     if passenger_id in assigned_passengers and traci.vehicle.getRoadID(jeepney_id) == current_edge:
-                    
-                    #         traci.vehicle.setBusStop(jeepney_id, current_edge, duration=10)
-                    #         jeepney_states[jeepney_id] =  {'hidden_state': hidden_state_map['Passenger'], 'observed_state': observed_state_map['Unload']} 
-                    #         print(f"Jeepney {jeepney_id} stopped at {jeepney_edge} for passenger {passenger_id}.")
-                    #         jeepney_stop_assignments[jeepney_id].remove(passenger_id)
-                    #         if not jeepney_stop_assignments[jeepney_id]:
-                    #             del jeepney_stop_assignments[jeepney_id]
                     
 
                     

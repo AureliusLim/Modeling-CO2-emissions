@@ -1,18 +1,10 @@
-<additional>
-	<vType id="traditional_jeepney" line="trad_line" accel="1.0" decel="30" sigma="0.5" length="6" minGap="2.5" maxSpeed="8" color="0,1,0" emissionClass="HBEFA3/PC_G_EU4" personCapacity="18" />
-    <vType id="modern_jeepney" accel="1.0" decel="30" sigma="0.5" length="7" minGap="2.5" maxSpeed="12" color="0,0,1" emissionClass="HBEFA3/PC_G_EU6" personCapacity="24" />
-	
-    <!-- <busStop id="jposadas" lane="29377703#2_1" startPos="0.0" endPos="10.0"/>
-    <busStop id="quiapo" lane="16174062#4_1" startPos="0.0" endPos="10.0"/> -->
-
-	<busStop id=":96442154_10_1" lane=":96442154_10_1" startPos="0.0" endPos="10.0"/>
-
-    <busStop id="29377703#0" x="0.0" y="10.0" lane="29377703#0_1"/>
+<busStops>
+	<busStop id="29377703#0" x="0.0" y="10.0" lane="29377703#0_1"/>
 	<busStop id="29377703#1" x="0.0" y="10.0" lane="29377703#1_1"/>
-	<busStop id="29377703#2" startPos="0.0" endPos="62.0"  pos="50" lane="29377703#2_1"/>
+	<busStop id="29377703#2" x="0.0" y="10.0" lane="29377703#2_1"/>
 	<busStop id="29377703#3" x="0.0" y="10.0" lane="29377703#3_1"/>
 	<busStop id="29377703#4" x="0.0" y="10.0" lane="29377703#4_1"/>
-	<busStop id="303412427#0" x="0.0" y="10.0" pos="50" lane="303412427#0_1"/>
+	<busStop id="303412427#0" x="0.0" y="10.0" lane="303412427#0_1"/>
 	<busStop id="303412427#1" x="0.0" y="10.0" lane="303412427#1_1"/>
 	<busStop id="303412427#2" x="0.0" y="10.0" lane="303412427#2_1"/>
 	<busStop id="303412427#3" x="0.0" y="10.0" lane="303412427#3_1"/>
@@ -47,7 +39,7 @@
 	<busStop id="615478344#1" x="0.0" y="10.0" lane="615478344#1_1"/>
 	<busStop id="368461882#0" x="0.0" y="10.0" lane="368461882#0_1"/>
 	<busStop id="368461882#1" x="0.0" y="10.0" lane="368461882#1_1"/>
-	<busStop id="368461882#2" x="0.0" y="10.0" pos="50" lane="368461882#2_1"/>
+	<busStop id="368461882#2" x="0.0" y="10.0" lane="368461882#2_1"/>
 	<busStop id="694268908" x="0.0" y="10.0" lane="694268908_1"/>
 	<busStop id="923261416" x="0.0" y="10.0" lane="923261416_1"/>
 	<busStop id="694268909#0" x="0.0" y="10.0" lane="694268909#0_1"/>
@@ -208,7 +200,7 @@
 	<busStop id="917450547#2" x="0.0" y="10.0" lane="917450547#2_1"/>
 	<busStop id="402897988#1" x="0.0" y="10.0" lane="402897988#1_1"/>
 	<busStop id="32981461" x="0.0" y="10.0" lane="32981461_1"/>
-	<busStop id="917450545" x="0.0" y="10.0" lane="917450545_0"/>
+	<busStop id="917450545" x="0.0" y="10.0" lane="917450545_1"/>
 	<busStop id="1112806233-AddedOnRampEdge" x="0.0" y="10.0" lane="1112806233-AddedOnRampEdge_1"/>
 	<busStop id="1112806233" x="0.0" y="10.0" lane="1112806233_1"/>
 	<busStop id="4588647#0" x="0.0" y="10.0" lane="4588647#0_1"/>
@@ -300,7 +292,7 @@
 	<busStop id="-303412427#3" x="0.0" y="10.0" lane="-303412427#3_1"/>
 	<busStop id="-303412427#2" x="0.0" y="10.0" lane="-303412427#2_1"/>
 	<busStop id="-303412427#1" x="0.0" y="10.0" lane="-303412427#1_1"/>
-	<busStop id="-303412427#0" x="0.0" y="10.0"  lane="-303412427#0_1"/>
+	<busStop id="-303412427#0" x="0.0" y="10.0" lane="-303412427#0_1"/>
 	<busStop id="-29377703#4" x="0.0" y="10.0" lane="-29377703#4_1"/>
 	<busStop id="-29377703#3" x="0.0" y="10.0" lane="-29377703#3_1"/>
 	<busStop id="-29377703#2" x="0.0" y="10.0" lane="-29377703#2_1"/>
@@ -310,4 +302,4 @@
 	<busStop id="-1069829005#1" x="0.0" y="10.0" lane="-1069829005#1_1"/>
 	<busStop id="1069829005#1" x="0.0" y="10.0" lane="1069829005#1_1"/>
 	<busStop id="1069829005#2" x="0.0" y="10.0" lane="1069829005#2_1"/>
-</additional>
+</busstops>
