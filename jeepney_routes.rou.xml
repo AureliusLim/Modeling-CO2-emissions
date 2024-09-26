@@ -8,7 +8,7 @@
    
     
         <vehicle id="jeepney_1" type="traditional_jeepney" route="r_1" depart="0">
-
+         
         </vehicle>
                     
         <vehicle id="modernjeepney_1" type="modern_jeepney" route="r_1" depart="0">

@@ -145,12 +145,11 @@ def simulate():
                         # Get passengers on the same edge as the jeepney
                         passengers_on_edge = get_passengers_on_edge(jeepney_edge)
 
-                    # if jeepney_edge == '-29377703#2' and step > 900:
-                    #     print(f"Jeepney {jeepney_id} reached the last edge in its route.")
-                    #     if jeepney_id in traditional_id_list:
-                    #         traditional_id_list.remove(jeepney_id)
-                    #     elif jeepney_id in modern_id_list:
-                    #         modern_id_list.remove(jeepney_id)
+                    if jeepney_edge == "-29377703#1":
+                        print("stop set")
+                        traci.vehicle.setBusStop(jeepney_id, "1069829005#2", duration=30)
+                    elif jeepney_edge == "16174062#2":
+                        traci.vehicle.setBusStop(jeepney_id, "16174062#4", duration=30)
                     if not is_valid_road_edge(jeepney_edge):
                         continue
 
