@@ -14,7 +14,7 @@ def generate_bus_stop_xml(route_edges, output_file):
         f.write('</busstops>')
 
 # Example usage:
-jeepney_route_edges = "1174874706 -917450542 -4588647 1112806233 775437708 4588647"
+jeepney_route_edges = "1174874706 -917450542 -4588647 1112806233 4588647"
 output_file = "bus_stops.xml"
 
 generate_bus_stop_xml(jeepney_route_edges, output_file)
