@@ -7,7 +7,7 @@
 
     <input>
         <route-files value="neteditconfig.rou.xml"/>
-        <sumo-net-file value="fullroute.net.xml"/>
+        <sumo-net-file value="full.net.xml"/>
     </input>
 
     <processing>
