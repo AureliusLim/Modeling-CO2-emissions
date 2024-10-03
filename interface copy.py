@@ -3,6 +3,8 @@ import traci
 import xml.etree.ElementTree as ET
 import joblib
 from rtree import index
+import xml.etree.ElementTree as ET
+
 
 # Load the trained HMM model
 trad_model = joblib.load('trained_hmm_model.pkl')
@@ -79,10 +81,7 @@ passenger_destinations = {}
 tree = ET.parse('person_flows.rou.xml')
 root = tree.getroot()
 
-# Populate jeepney_id_list
-for i in range(1, 6):
-    traditional_id_list.append(f'jeepney_{i}')
-    modern_id_list.append(f'modernjeepney_{i}')
+
 
 # Populate passenger_destinations from the XML file
 for person_elem in root.findall('person'):
@@ -105,8 +104,6 @@ print(passenger_destinations)
 def is_valid_road_edge(edge_id):
     return edge_id and not edge_id.startswith(':')
 
-midtrip_edge = '615456195'
-endtrip_edge = '16174062#0'
 nearby_passengers = []
 # Main simulation loop
 def simulate():
@@ -115,135 +112,136 @@ def simulate():
         step = 0
 
         # Initialize the state for each jeepney
-        jeepney_states = {jeepney_id: {'hidden_state': hidden_state_map['Vehicle'], 'observed_state': observed_state_map['Go']} for jeepney_id in traditional_id_list + modern_id_list}
-        
+        jeepney_states = {
+            f"jeepney_{jeepney_id}": {
+                'hidden_state': hidden_state_map['Vehicle'], 
+                'observed_state': observed_state_map['Go']
+            } 
+            for jeepney_id in range(highest_jeepney_id + 1)
+        }
+
+        # Initialize jeepney_states for modern jeepneys (modernjeepney_0 to modernjeepney_highest_modernjeepney_id)
+        jeepney_states.update({
+            f"modernjeepney_{jeepney_id}": {
+                'hidden_state': hidden_state_map['Vehicle'], 
+                'observed_state': observed_state_map['Go']
+            } 
+            for jeepney_id in range(highest_modernjeepney_id + 1)
+        })
         while step >= 0:  # Set a reasonable number of simulation steps
             traci.simulationStep()
             if step % 1 == 0:
                 co2_emissions = {}
                 
-                # Retrieve CO2 emissions for traditional jeepneys
-                for jeepney_id in traditional_id_list:
-                    co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
-                
-                # Retrieve CO2 emissions for modern jeepneys
-                for jeepney_id in modern_id_list:
-                    co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
-                
-                # Process or save CO2 emissions data as needed
-                with open('Emission Output/emissions.txt', 'a') as f:
-                    f.write(f"Step {step}:\n")
-                    for vehicle_id, co2 in co2_emissions.items():
-                        f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
+               
             if step % 10 == 0:
                 # Check for jeepneys and passengers on the same edge
-                for jeepney_id in traditional_id_list + modern_id_list:
-                    jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
-                   
-                    if step % 40 == 0:
-                        #nearby_passengers = get_nearby_passengers(jeepney_id)
-                        # Get passengers on the same edge as the jeepney
-                        passengers_on_edge = get_passengers_on_edge(jeepney_edge)
+                for jeepney_id in traci.vehicle.getIDList():
+                     if jeepney_id.startswith("jeepney_") or jeepney_id.startswith("modernjeepney_"):
+                        if jeepney_id.startswith("jeepney_"):
+                            co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
+                        elif jeepney_id.startswith("modernjeepney_"):
+                            co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
 
-                    if jeepney_edge == "-29377703#1":
-                        print("stop set")
-                        traci.vehicle.setBusStop(jeepney_id, "1069829005#2", duration=30)
-                    elif jeepney_edge == "16174062#2":
-                        traci.vehicle.setBusStop(jeepney_id, "16174062#4", duration=30)
-                    if not is_valid_road_edge(jeepney_edge):
-                        continue
+                         # Process or save CO2 emissions data as needed
+                        with open('Emission Output/emissions.txt', 'a') as f:
+                            f.write(f"Step {step}:\n")
+                            for vehicle_id, co2 in co2_emissions.items():
+                                f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
 
+                        jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
+                        passengers_on_edge = []
+                        if step % 40 == 0:
+                            #nearby_passengers = get_nearby_passengers(jeepney_id)
+                            # Get passengers on the same edge as the jeepney
+                            passengers_on_edge = get_passengers_on_edge(jeepney_edge)
 
-                    if jeepney_edge == midtrip_edge:
-                        traci.vehicle.setMaxSpeed(jeepney_id, 22.22)
-                    elif jeepney_edge == endtrip_edge:
-                        traci.vehicle.setMaxSpeed(jeepney_id, 11.11)
-                    else:
-                        traci.vehicle.setMaxSpeed(jeepney_id, 11.11)
+                        if not is_valid_road_edge(jeepney_edge):
+                            continue
 
-                    current_lane = traci.vehicle.getLaneIndex(jeepney_id)
-                    num_lanes = traci.edge.getLaneNumber(jeepney_edge)
-                    jeepney_capacity = traci.vehicle.getPersonCapacity(jeepney_id)
-                    jeepney_passengers = traci.vehicle.getPersonNumber(jeepney_id)
+                        current_lane = traci.vehicle.getLaneIndex(jeepney_id)
+                        num_lanes = traci.edge.getLaneNumber(jeepney_edge)
+                        jeepney_capacity = traci.vehicle.getPersonCapacity(jeepney_id)
+                        jeepney_passengers = traci.vehicle.getPersonNumber(jeepney_id)
 
-                    current_state = jeepney_states[jeepney_id]['hidden_state']
-                    current_obs = np.array([jeepney_states[jeepney_id]['observed_state'], jeepney_passengers])
-                 
-                    model = trad_model if jeepney_id in traditional_id_list else modern_model
+                        current_state = jeepney_states[jeepney_id]['hidden_state']
+                        current_obs = np.array([jeepney_states[jeepney_id]['observed_state'], jeepney_passengers])
                     
-                    next_hidden_state = hidden_state_map['Vehicle']
+                        model = trad_model if jeepney_id in traditional_id_list else modern_model
+                        
+                        next_hidden_state = hidden_state_map['Vehicle']
 
-                    # Sample the observed state for the next hidden state
-                    next_observed_state = sample_observed_state(next_hidden_state, model)
+                        # Sample the observed state for the next hidden state
+                        next_observed_state = sample_observed_state(next_hidden_state, model)
+                        
+
+                        # Update the jeepney's state
+                        jeepney_states[jeepney_id] = {'hidden_state': next_hidden_state, 'observed_state': next_observed_state}
+
+                        # Execute actions based on the next observed state
+                        observed_state_name = reverse_observed_state_map[next_observed_state]
+                        hidden_state_name = reverse_hidden_state_map[next_hidden_state]
+                        #print(f'{jeepney_id}: {observed_state_name} : {hidden_state_name}')
+                        if observed_state_name == 'Go':
+                            traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
+                        elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
+                            
+                            if step % 100 == 0:
+                                try:
+                                    traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=5)
+                                    #print(f"Jeepney {jeepney_id} set to wait at bus stop {jeepney_edge}")
+                                except traci.exceptions.TraCIException as e:
+                                            print(f"Error setting bus stop for jeepney {jeepney_id} at {jeepney_edge}: {e}")
+
                     
-
-                    # Update the jeepney's state
-                    jeepney_states[jeepney_id] = {'hidden_state': next_hidden_state, 'observed_state': next_observed_state}
-
-                    # Execute actions based on the next observed state
-                    observed_state_name = reverse_observed_state_map[next_observed_state]
-                    hidden_state_name = reverse_hidden_state_map[next_hidden_state]
-                    #print(f'{jeepney_id}: {observed_state_name} : {hidden_state_name}')
-                    if observed_state_name == 'Go':
-                        traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
-                    elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
+                        elif observed_state_name == '1 Lane Right':
                         
-                        if step % 100 == 0:
-                            try:
-                                traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=5)
-                                #print(f"Jeepney {jeepney_id} set to wait at bus stop {jeepney_edge}")
-                            except traci.exceptions.TraCIException as e:
-                                        print(f"Error setting bus stop for jeepney {jeepney_id} at {jeepney_edge}: {e}")
-
-                   
-                    elif observed_state_name == '1 Lane Right':
-                       
+                            
+                            if current_lane - 1 > 0:
                         
-                        if current_lane - 1 > 0:
-                       
-                            traci.vehicle.changeLaneRelative(jeepney_id, -1, 10.0)
-                    elif observed_state_name == '1 Lane Left':
-                     
-                       
-                        if current_lane + 1 < num_lanes - 1:
-                          
-                            traci.vehicle.changeLaneRelative(jeepney_id, 1, 10.0)
-                    elif observed_state_name == '2 Lane Right':
+                                traci.vehicle.changeLaneRelative(jeepney_id, -1, 10.0)
+                        elif observed_state_name == '1 Lane Left':
                         
-                        if current_lane - 1 > 1:
-                       
-                            traci.vehicle.changeLaneRelative(jeepney_id, -2, 10.0)
-                    elif observed_state_name == '2 Lane Left' and step % 20 == 0:
                         
-                        if current_lane + 1 < num_lanes - 2:
-                      
-                            traci.vehicle.changeLaneRelative(jeepney_id, 2, 10.0)
+                            if current_lane + 1 < num_lanes - 1:
+                            
+                                traci.vehicle.changeLaneRelative(jeepney_id, 1, 10.0)
+                        elif observed_state_name == '2 Lane Right':
+                            
+                            if current_lane - 1 > 1:
+                        
+                                traci.vehicle.changeLaneRelative(jeepney_id, -2, 10.0)
+                        elif observed_state_name == '2 Lane Left' and step % 20 == 0:
+                            
+                            if current_lane + 1 < num_lanes - 2:
+                        
+                                traci.vehicle.changeLaneRelative(jeepney_id, 2, 10.0)
 
-                    # Check if the jeepney can pick up passengers
-                    if jeepney_passengers < jeepney_capacity:  # Check if jeepney is not full
-                        for passenger_id in passengers_on_edge:
-                            #print(passenger_id)
-                            if passenger_id not in traci.person.getIDList():
-                                print(f"Passenger {passenger_id} has already been removed or is not found.")
-                                continue
-                            passenger_edge = traci.person.getRoadID(passenger_id)
-                            if not is_valid_road_edge(passenger_edge):
-                                continue
+                        # Check if the jeepney can pick up passengers
+                        if jeepney_passengers < jeepney_capacity:  # Check if jeepney is not full
+                            for passenger_id in passengers_on_edge:
+                                #print(passenger_id)
+                                if passenger_id not in traci.person.getIDList():
+                                    print(f"Passenger {passenger_id} has already been removed or is not found.")
+                                    continue
+                                passenger_edge = traci.person.getRoadID(passenger_id)
+                                if not is_valid_road_edge(passenger_edge):
+                                    continue
 
-                            if jeepney_edge == passenger_edge:
-                                if jeepney_id not in jeepney_stop_assignments:
-                                    jeepney_stop_assignments[jeepney_id] = []
+                                if jeepney_edge == passenger_edge:
+                                    if jeepney_id not in jeepney_stop_assignments:
+                                        jeepney_stop_assignments[jeepney_id] = []
 
-                                if passenger_id not in jeepney_stop_assignments[jeepney_id]:
-                           
-                                    try:
-                                       
-                                        traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=10)
-                                        jeepney_states[jeepney_id] =  {'hidden_state': hidden_state_map['Passenger'], 'observed_state': observed_state_map['Load']} 
-                                        jeepney_stop_assignments[jeepney_id].append(passenger_id)
-                                        print(f"Jeepney {jeepney_id} set to stop at bus stop {jeepney_edge} for passenger {passenger_id}.")
-                                    except traci.exceptions.TraCIException as e:
-                                        print(f"Error setting bus stop for jeepney {jeepney_id} at {jeepney_edge}: {e}")
+                                    if passenger_id not in jeepney_stop_assignments[jeepney_id]:
+                            
+                                        try:
+                                        
+                                            traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=10)
+                                            jeepney_states[jeepney_id] =  {'hidden_state': hidden_state_map['Passenger'], 'observed_state': observed_state_map['Load']} 
+                                            jeepney_stop_assignments[jeepney_id].append(passenger_id)
+                                            print(f"Jeepney {jeepney_id} set to stop at bus stop {jeepney_edge} for passenger {passenger_id}.")
+                                        except traci.exceptions.TraCIException as e:
+                                            print(f"Error setting bus stop for jeepney {jeepney_id} at {jeepney_edge}: {e}")
             # Check for passengers reaching their destination
             for passenger_id in list(traci.person.getIDList()):
                 current_edge = traci.person.getRoadID(passenger_id)
@@ -267,8 +265,8 @@ def simulate():
                                 del jeepney_stop_assignments[assigned_jeepney]
 
                             # Set the bus stop and unload the passenger
-                            traci.vehicle.setBusStop(assigned_jeepney, current_edge, duration=10)
-                            print(f"Jeepney {assigned_jeepney} stopped at {current_edge} for passenger {passenger_id}.")
+                            # traci.vehicle.setBusStop(assigned_jeepney, current_edge, duration=10)
+                            # print(f"Jeepney {assigned_jeepney} stopped at {current_edge} for passenger {passenger_id}.")
                             
                             # Check if the passenger still exists before removing
                             if passenger_id in traci.person.getIDList():
@@ -312,6 +310,30 @@ if mode in [1, 2, 3]:
     
     # Start SUMO and connect to TraCI (assuming your existing setup)
     sumoBinary = "sumo-gui"
+    # Parse the XML file
+    config = 'poisson' + str(mode) + '.rou.xml' 
+    tree = ET.parse(config)
+    root = tree.getroot()
+
+    # Initialize variables to store the highest IDs
+    highest_jeepney_id = -1
+    highest_modernjeepney_id = -1
+
+    # Loop through all vehicle elements
+    for vehicle in root.findall('vehicle'):
+        vehicle_id = vehicle.get('id')
+        
+        # Check if the vehicle ID starts with "jeepney_"
+        if vehicle_id.startswith("jeepney_"):
+            jeepney_num = int(vehicle_id.split('_')[1])
+            if jeepney_num > highest_jeepney_id:
+                highest_jeepney_id = jeepney_num
+        
+        # Check if the vehicle ID starts with "modernjeepney_"
+        elif vehicle_id.startswith("modernjeepney_"):
+            modernjeepney_num = int(vehicle_id.split('_')[1])
+            if modernjeepney_num > highest_modernjeepney_id:
+                highest_modernjeepney_id = modernjeepney_num
     # Proceed with SUMO initialization and other operations
     
     print(f"Selected mode {mode}. Using configuration file: {configFile}")
