@@ -119,7 +119,7 @@ def simulate():
         
         while step >= 0:  # Set a reasonable number of simulation steps
             traci.simulationStep()
-            if step % 1 == 0:
+            if step % 1 < 0.1:
                 co2_emissions = {}
                 
                 # Retrieve CO2 emissions for traditional jeepneys
@@ -134,19 +134,20 @@ def simulate():
                 with open('Emission Output/emissions.txt', 'a') as f:
                     f.write(f"Step {step}:\n")
                     for vehicle_id, co2 in co2_emissions.items():
-                        f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
-            if step % 10 == 0:
+                        if(co2 > 0):
+                            f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
+            if step % 10 < 0.1:
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traditional_id_list + modern_id_list:
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
                    
-                    if step % 40 == 0:
+                    if step % 40 < 0.1:
                         #nearby_passengers = get_nearby_passengers(jeepney_id)
                         # Get passengers on the same edge as the jeepney
                         passengers_on_edge = get_passengers_on_edge(jeepney_edge)
 
                     if jeepney_edge == "-29377703#1":
-                        print("stop set")
+                      
                         traci.vehicle.setBusStop(jeepney_id, "1069829005#2", duration=30)
                     elif jeepney_edge == "16174062#2":
                         traci.vehicle.setBusStop(jeepney_id, "16174062#4", duration=30)
@@ -155,11 +156,20 @@ def simulate():
 
 
                     if jeepney_edge == midtrip_edge:
-                        traci.vehicle.setMaxSpeed(jeepney_id, 22.22)
+                        if jeepney_id.startswith("jeepney_"):
+                            traci.vehicle.setMaxSpeed(jeepney_id, 12.5)
+                        else:
+                            traci.vehicle.setMaxSpeed(jeepney_id, 13.8)
                     elif jeepney_edge == endtrip_edge:
-                        traci.vehicle.setMaxSpeed(jeepney_id, 11.11)
+                        if jeepney_id.startswith("jeepney_"):
+                            traci.vehicle.setMaxSpeed(jeepney_id, 7)
+                        else:
+                            traci.vehicle.setMaxSpeed(jeepney_id, 9)
                     else:
-                        traci.vehicle.setMaxSpeed(jeepney_id, 11.11)
+                        if jeepney_id.startswith("jeepney_"):
+                            traci.vehicle.setMaxSpeed(jeepney_id, 7)
+                        else:
+                            traci.vehicle.setMaxSpeed(jeepney_id, 9)
 
                     current_lane = traci.vehicle.getLaneIndex(jeepney_id)
                     num_lanes = traci.edge.getLaneNumber(jeepney_edge)
@@ -188,7 +198,7 @@ def simulate():
                         traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
                     elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
                         
-                        if step % 100 == 0:
+                        if step % 100 < 0.1:
                             try:
                                 traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=5)
                                 #print(f"Jeepney {jeepney_id} set to wait at bus stop {jeepney_edge}")
