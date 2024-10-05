@@ -128,13 +128,14 @@ def simulate():
             } 
             for jeepney_id in range(highest_modernjeepney_id + 1)
         })
+        co2_emissions = {}
         while step >= 0:  # Set a reasonable number of simulation steps
             traci.simulationStep()
-            if step % 1 == 0:
-                co2_emissions = {}
+            print(step)
+                
                 
                
-            if step % 10 == 0:
+            if step % 10 < 0.1:
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traci.vehicle.getIDList():
                      if jeepney_id.startswith("jeepney_") or jeepney_id.startswith("modernjeepney_"):
@@ -151,7 +152,7 @@ def simulate():
 
                         jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
                         passengers_on_edge = []
-                        if step % 40 == 0:
+                        if step % 40 < 0.1:
                             #nearby_passengers = get_nearby_passengers(jeepney_id)
                             # Get passengers on the same edge as the jeepney
                             passengers_on_edge = get_passengers_on_edge(jeepney_edge)
@@ -186,7 +187,7 @@ def simulate():
                             traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
                         elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
                             
-                            if step % 100 == 0:
+                            if step % 100 < 0.1:
                                 try:
                                     traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=5)
                                     #print(f"Jeepney {jeepney_id} set to wait at bus stop {jeepney_edge}")
@@ -285,7 +286,7 @@ def simulate():
 
                     
 
-            step += 1
+            step += 0.05
         print("Simulation ended.")
     except traci.exceptions.TraCIException as e:
         print(f"Error in simulation loop: {e}")
