@@ -44,7 +44,7 @@ def calculate_co2_emissions(emissions_data, step_interval=300):
         else:
             # Calculate the total CO2 for the current minute
             co2_total = sum(current_minute_emissions.values())
-            co2_per_minute.append({'minute': current_time // step_interval, 'CO2_total': co2_total})
+            co2_per_minute.append({'Interval': current_time // step_interval, 'CO2_total': co2_total / step_interval})
 
             # Move to the next minute, reset totals
             current_time += step_interval
