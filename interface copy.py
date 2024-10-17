@@ -136,12 +136,12 @@ def simulate():
                     for vehicle_id, co2 in co2_emissions.items():
                         if(co2 > 0):
                             f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
-            if step % 10 < 0.1:
+            if int(step) % 10 == 0:
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traditional_id_list + modern_id_list:
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
                    
-                    if step % 40 < 0.1:
+                    if int(step)  % 40 == 0:
                         #nearby_passengers = get_nearby_passengers(jeepney_id)
                         # Get passengers on the same edge as the jeepney
                         passengers_on_edge = get_passengers_on_edge(jeepney_edge)
@@ -198,7 +198,7 @@ def simulate():
                         traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
                     elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
                         
-                        if step % 100 < 0.1:
+                        if int(step) % 100 == 0:
                             try:
                                 traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=5)
                                 #print(f"Jeepney {jeepney_id} set to wait at bus stop {jeepney_edge}")
@@ -306,7 +306,7 @@ def simulate():
 
 # Run the simulation
 
-print("[1] 6AM - 9AM\n[2] 11AM - 2PM\n[3] 3PM - 6PM")
+print("[1] 7AM - 9AM\n[2] 11AM - 1PM\n[3] 4PM - 6PM")
 mode = int(input("Mode: "))
 configFile = ""
 

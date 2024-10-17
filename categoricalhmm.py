@@ -6,6 +6,26 @@ from sklearn.model_selection import train_test_split
 from imblearn.over_sampling import SMOTE
 from sklearn.preprocessing import LabelEncoder
 import joblib
+def print_state_occurrences_by_load(sequences):
+    load_groups = {0: 'Low (0 - 33%)', 1: 'Moderate (34 - 80%)', 2: 'Full (81 - 100%)'}
+    for load, load_name in load_groups.items():
+        observed_states = []
+        hidden_states = []
+        for seq in sequences:
+            # Filter sequences by passenger load
+            load_indices = np.where(seq[0][:, 1] == load)[0]
+            if len(load_indices) > 0:
+                observed_states.extend(seq[0][load_indices, 0])
+                hidden_states.extend(seq[1][load_indices])
+        
+        # Print observed state occurrences
+        print(f"\nOccurrences of observed states for Passenger Load '{load_name}':")
+        print(pd.Series(observed_states).value_counts().sort_index())
+
+        # Print hidden state occurrences
+        print(f"Occurrences of hidden states for Passenger Load '{load_name}':")
+        print(pd.Series(hidden_states).value_counts().sort_index())
+
 # Path to the directory containing CSV files
 csv_files_path = 'hmmdata/*.csv'
 
@@ -55,7 +75,7 @@ print(pd.Series(observed_states_flat).value_counts().sort_index())
 
 print("\nDistribution of hidden states in sequences:")
 print(pd.Series(hidden_states_flat).value_counts().sort_index())
-
+print_state_occurrences_by_load(sequences)
 # Split sequences into observations and hidden states
 X = [seq[0][:, 0] for seq in sequences]  # Observed states
 Y = [seq[1] for seq in sequences]        # Hidden states
