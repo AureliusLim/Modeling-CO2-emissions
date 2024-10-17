@@ -133,14 +133,12 @@ def simulate():
             traci.simulationStep()
             
                 
-                
-               
-            if step % 10 == 0:
+            for jeepney_id in traci.vehicle.getIDList():
+                # if step % 1 == 0:   
+                   
+                if step % 10 == 0:
                 # Check for jeepneys and passengers on the same edge
-                for jeepney_id in traci.vehicle.getIDList():
-                    
                     co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
-                    
                         # Process or save CO2 emissions data as needed
                     with open('Emission Output/emissions.txt', 'a') as f:
                         f.write(f"Step {step}:\n")
