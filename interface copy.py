@@ -135,7 +135,7 @@ def simulate():
                 
                 
                
-            if step % 10 < 0.1:
+            if step % 10 == 0:
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traci.vehicle.getIDList():
                     
@@ -151,7 +151,7 @@ def simulate():
                         
                         jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
                         passengers_on_edge = []
-                        if step % 40 < 0.1:
+                        if step % 40 == 0:
                             #nearby_passengers = get_nearby_passengers(jeepney_id)
                             # Get passengers on the same edge as the jeepney
                             passengers_on_edge = get_passengers_on_edge(jeepney_edge)
@@ -186,7 +186,7 @@ def simulate():
                             traci.vehicle.setSpeed(jeepney_id, traci.vehicle.getAllowedSpeed(jeepney_id))
                         elif observed_state_name in ['Stop', 'Load', 'Unload', 'Wait']:
                             
-                            if step % 100 < 0.1:
+                            if step % 100 == 0:
                                 try:
                                     traci.vehicle.setBusStop(jeepney_id, jeepney_edge, duration=5)
                                     #print(f"Jeepney {jeepney_id} set to wait at bus stop {jeepney_edge}")
@@ -285,7 +285,7 @@ def simulate():
 
                     
 
-            step += 0.05
+            step += 1
         print("Simulation ended.")
     except traci.exceptions.TraCIException as e:
         print(f"Error in simulation loop: {e}")
@@ -294,7 +294,7 @@ def simulate():
 
 # Run the simulation
 
-print("[1] 6AM - 9AM\n[2] 11AM - 2PM\n[3] 3PM - 6PM")
+print("[1] 7AM - 9AM\n[2] 11AM - 1PM\n[3] 4PM - 6PM")
 mode = int(input("Mode: "))
 configFile = ""
 
