@@ -24,7 +24,7 @@ def read_emissions_file(filename):
     return emissions_data
 
 # Function to calculate total CO2 emissions every minute (60 steps)
-def calculate_co2_emissions(emissions_data, step_interval=60):
+def calculate_co2_emissions(emissions_data, step_interval=300):
     co2_per_minute = []
     current_time = 0
     co2_total = 0
@@ -53,7 +53,7 @@ def calculate_co2_emissions(emissions_data, step_interval=60):
     # Add the last interval if there is remaining data
     if current_minute_emissions:
         co2_total = sum(current_minute_emissions.values())
-        co2_per_minute.append({'minute': current_time // step_interval, 'CO2_total': co2_total})
+        co2_per_minute.append({'Interval': current_time // step_interval, 'CO2_total': co2_total})
 
     return co2_per_minute
 
@@ -64,4 +64,4 @@ co2_by_minute = calculate_co2_emissions(emissions_data)
 
 # Output the results
 for minute_data in co2_by_minute:
-    print(f"Minute {minute_data['minute']}: Total CO2 = {minute_data['CO2_total']} g")
+    print(f"Minute {minute_data['Interval']}: Total CO2 = {minute_data['CO2_total']} g")
