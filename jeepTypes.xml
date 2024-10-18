@@ -1,10 +1,152 @@
 <additional>
+	<!-- aglipay-panaderos intersection -->
+	<!-- <inductionLoop id="intersection#1_1" lane="-923261417#1_1" pos="23" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_1_car" lane="-923261417#1_1" pos="23" period="7200" file="out1.xml" vTypes="car"/>
+	<inductionLoop id="intersection#1_1_bus" lane="-923261417#1_1" pos="23" period="7200" file="out1.xml" vTypes="bus"/>
+	<inductionLoop id="intersection#1_1_truck" lane="-923261417#1_1" pos="23" period="7200" file="out1.xml" vTypes="truck"/>
+	<inductionLoop id="intersection#1_1_motorcycle" lane="-923261417#1_1" pos="23" period="7200" file="out1.xml" vTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_1_bicycle" lane="-923261417#1_1" pos="23" period="7200" file="out1.xml" vTypes="bicycle"/>
+
+
+
+	<!-- <inductionLoop id="intersection#1_2" lane="-923261417#1_2" pos="23" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_2_car" lane="-923261417#1_2" pos="23" period="7200" file="out1.xml" vTypes="car"/>
+	<inductionLoop id="intersection#1_2_bus" lane="-923261417#1_2" pos="23" period="7200" file="out1.xml" vTypes="bus"/>
+	<inductionLoop id="intersection#1_2_truck" lane="-923261417#1_2" pos="23" period="7200" file="out1.xml" vTypes="truck"/>
+	<inductionLoop id="intersection#1_2_motorcycle" lane="-923261417#1_2" pos="23" period="7200" file="out1.xml" vTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_2_bicycle" lane="-923261417#1_2" pos="23" period="7200" file="out1.xml" vTypes="bicycle"/>
+
+	<!-- <inductionLoop id="intersection#1_3" lane="368461882#1_1" pos="9" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_3_car" lane="368461882#1_1" pos="9" period="7200" file="out1.xml" vTypes="car"/>
+	<inductionLoop id="intersection#1_3_bus" lane="368461882#1_1" pos="9" period="7200" file="out1.xml" vTypes="bus"/>
+	<inductionLoop id="intersection#1_3_truck" lane="368461882#1_1" pos="9" period="7200" file="out1.xml" vTypes="truck"/>
+	<inductionLoop id="intersection#1_3_motorcycle" lane="368461882#1_1" pos="9" period="7200" file="out1.xml" vTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_3_bicycle" lane="368461882#1_1" pos="9" period="7200" file="out1.xml" vTypes="bicycle"/>
+
+
+	<!-- <inductionLoop id="intersection#1_4" lane="368461882#1_2" pos="9" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_4_car" lane="368461882#1_2" pos="9" period="7200" file="out1.xml" vTypes="car"/>
+	<inductionLoop id="intersection#1_4_bus" lane="368461882#1_2" pos="9" period="7200" file="out1.xml" vTypes="bus"/>
+	<inductionLoop id="intersection#1_4_truck" lane="368461882#1_2" pos="9" period="7200" file="out1.xml" vTypes="truck"/>
+	<inductionLoop id="intersection#1_4_motorcycle" lane="368461882#1_2" pos="9" period="7200" file="out1.xml" vTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_4_bicycle" lane="368461882#1_2" pos="9" period="7200" file="out1.xml" vTypes="bicycle"/>
+
+
+
+	<!-- <inductionLoop id="intersection#1_5" lane="-923261416_1" pos="80" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_5_car" lane="-923261416_1" pos="80" period="7200" file="out1.xml" vTypes="car"/>
+	<inductionLoop id="intersection#1_5_bus" lane="-923261416_1" pos="80" period="7200" file="out1.xml" vTypes="bus"/>
+	<inductionLoop id="intersection#1_5_truck" lane="-923261416_1" pos="80" period="7200" file="out1.xml" vTypes="truck"/>
+	<inductionLoop id="intersection#1_5_motorcycle" lane="-923261416_1" pos="80" period="7200" file="out1.xml" vTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_5_bicycle" lane="-923261416_1" pos="80" period="7200" file="out1.xml" vTypes="bicycle"/>
+
+	<!-- <inductionLoop id="intersection#1_6" lane="-923261416_2" pos="80" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_6_car" lane="-923261416_2" pos="80" period="7200" file="out1.xml" VTypes="car"/>
+	<inductionLoop id="intersection#1_6_bus" lane="-923261416_2" pos="80" period="7200" file="out1.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#1_6_truck" lane="-923261416_2" pos="80" period="7200" file="out1.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#1_6_motorcycle" lane="-923261416_2" pos="80" period="7200" file="out1.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_6_bicycle" lane="-923261416_2" pos="80" period="7200" file="out1.xml" VTypes="bicycle"/>
+
+	<!-- <inductionLoop id="intersection#1_7" lane="176633481_1" pos="180" period="7200" file="out1.xml"/> -->
+	<inductionLoop id="intersection#1_7_car" lane="176633481_1" pos="180" period="7200" file="out1.xml" VTypes="car"/>
+	<inductionLoop id="intersection#1_7_bus" lane="176633481_1" pos="180" period="7200" file="out1.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#1_7_truck" lane="176633481_1" pos="180" period="7200" file="out1.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#1_7_motorcycle" lane="176633481_1" pos="180" period="7200" file="out1.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#1_7_bicycle" lane="176633481_1" pos="180" period="7200" file="out1.xml" VTypes="bicycle"/>
+
+
+	<!-- Ramon Magsaysay - old sta mesa -->
+	<inductionLoop id="intersection#2_1_car" lane="-4588647#0_1" pos="45" period="7200" file="out2.xml" VTypes="car"/>
+	<inductionLoop id="intersection#2_1_bus" lane="-4588647#0_1" pos="45" period="7200" file="out2.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#2_1_truck" lane="-4588647#0_1" pos="45" period="7200" file="out2.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#2_1_motorcycle" lane="-4588647#0_1" pos="45" period="7200" file="out2.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#2_1_bicycle" lane="-4588647#0_1" pos="45" period="7200" file="out2.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#2_2_car" lane="1112806233_1" pos="25" period="7200" file="out2.xml" VTypes="car"/>
+	<inductionLoop id="intersection#2_2_bus" lane="1112806233_1" pos="25" period="7200" file="out2.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#2_2_truck" lane="1112806233_1" pos="25" period="7200" file="out2.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#2_2_motorcycle" lane="1112806233_1" pos="25" period="7200" file="out2.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#2_2_bicycle" lane="1112806233_1" pos="25" period="7200" file="out2.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#2_3_car" lane="1112806233_2" pos="25" period="7200" file="out2.xml" VTypes="car"/>
+	<inductionLoop id="intersection#2_3_bus" lane="1112806233_2" pos="25" period="7200" file="out2.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#2_3_truck" lane="1112806233_2" pos="25" period="7200" file="out2.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#2_3_motorcycle" lane="1112806233_2" pos="25" period="7200" file="out2.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#2_3_bicycle" lane="1112806233_2" pos="25" period="7200" file="out2.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#2_4_car" lane="775437708_1" pos="135" period="7200" file="out2.xml" VTypes="car"/>
+	<inductionLoop id="intersection#2_4_bus" lane="775437708_1" pos="135" period="7200" file="out2.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#2_4_truck" lane="775437708_1" pos="135" period="7200" file="out2.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#2_4_motorcycle" lane="775437708_1" pos="135" period="7200" file="out2.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#2_4_bicycle" lane="775437708_1" pos="135" period="7200" file="out2.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#2_5_car" lane="775437708_2" pos="135" period="7200" file="out2.xml" VTypes="car"/>
+	<inductionLoop id="intersection#2_5_bus" lane="775437708_2" pos="135" period="7200" file="out2.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#2_5_truck" lane="775437708_2" pos="135" period="7200" file="out2.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#2_5_motorcycle" lane="775437708_2" pos="135" period="7200" file="out2.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#2_5_bicycle" lane="775437708_2" pos="135" period="7200" file="out2.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#2_6_car" lane="775437708_3" pos="135" period="7200" file="out2.xml" VTypes="car"/>
+	<inductionLoop id="intersection#2_6_bus" lane="775437708_3" pos="135" period="7200" file="out2.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#2_6_truck" lane="775437708_3" pos="135" period="7200" file="out2.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#2_6_motorcycle" lane="775437708_3" pos="135" period="7200" file="out2.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#2_6_bicycle" lane="775437708_3" pos="135" period="7200" file="out2.xml" VTypes="bicycle"/>
+
+	<!-- <inductionLoop id="legarda-figueras" lane="foo_2" pos="42" period="7200" file="out3.xml"/>  -->
+	<inductionLoop id="intersection#3_1_car" lane="825090426_2" pos="17" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_1_bus" lane="825090426_2" pos="17" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_1_truck" lane="825090426_2" pos="17" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_1_motorcycle" lane="825090426_2" pos="17" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_1_bicycle" lane="825090426_2" pos="17" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_2_car" lane="825090426_1" pos="17" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_2_bus" lane="825090426_1" pos="17" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_2_truck" lane="825090426_1" pos="17" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_2_motorcycle" lane="825090426_1" pos="17" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_2_bicycle" lane="825090426_1" pos="17" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_3_car" lane="28788650#1_1" pos="0" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_3_bus" lane="28788650#1_1" pos="0" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_3_truck" lane="28788650#1_1" pos="0" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_3_motorcycle" lane="28788650#1_1" pos="0" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_3_bicycle" lane="28788650#1_1" pos="0" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_4_car" lane="28788650#1_2" pos="0" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_4_bus" lane="28788650#1_2" pos="0" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_4_truck" lane="28788650#1_2" pos="0" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_4_motorcycle" lane="28788650#1_2" pos="0" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_4_bicycle" lane="28788650#1_2" pos="0" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_5_car" lane="28788650#1_3" pos="0" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_5_bus" lane="28788650#1_3" pos="0" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_5_truck" lane="28788650#1_3" pos="0" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_5_motorcycle" lane="28788650#1_3" pos="0" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_5_bicycle" lane="28788650#1_3" pos="0" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_6_car" lane="806499495#1_1" pos="195" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_6_bus" lane="806499495#1_1" pos="195" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_6_truck" lane="806499495#1_1" pos="195" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_6_motorcycle" lane="806499495#1_1" pos="195" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_6_bicycle" lane="806499495#1_1" pos="195" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_7_car" lane="806499495#1_2" pos="195" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_7_bus" lane="806499495#1_2" pos="195" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_7_truck" lane="806499495#1_2" pos="195" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_7_motorcycle" lane="806499495#1_2" pos="195" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_7_bicycle" lane="806499495#1_2" pos="195" period="7200" file="out3.xml" VTypes="bicycle"/>
+
+	<inductionLoop id="intersection#3_8_car" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="car"/>
+	<inductionLoop id="intersection#3_8_bus" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="bus"/>
+	<inductionLoop id="intersection#3_8_truck" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="truck"/>
+	<inductionLoop id="intersection#3_8_motorcycle" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="motorcycle"/>
+	<inductionLoop id="intersection#3_8_bicycle" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="bicycle"/>
+
 	<vType id="traditional_jeepney" 
        line="trad_line" accel="1.0" decel="3.5" sigma="0.5" 
        length="7" minGap="1.5" maxSpeed="7" 
        color="0,1,0" emissionClass="HBEFA3/PC_G_EU4" personCapacity="18" />
 
-<vType id="modern_jeepney" 
+	<vType id="modern_jeepney" 
        accel="1.2" decel="5.0" sigma="0.5" 
        length="8" minGap="1.5" maxSpeed="9" 
        color="0,0,1" emissionClass="HBEFA3/PC_G_EU6" personCapacity="24" />
