@@ -128,23 +128,26 @@ def simulate():
             } 
             for jeepney_id in range(highest_modernjeepney_id + 1)
         })
-        co2_emissions = {}
+     
         while step >= 0:  # Set a reasonable number of simulation steps
             traci.simulationStep()
-            
-                
+            if step % 1 == 0:   
+                co2_emissions = {}
+                for veh_id in traci.vehicle.getIDList():
+                    co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                with open('Emission Output/emissions.txt', 'a') as f:
+                    f.write(f"Step {step}:\n")
+                    for vehicle_id, co2 in co2_emissions.items():
+                        f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
             for jeepney_id in traci.vehicle.getIDList():
-                # if step % 1 == 0:   
+              
+                    
+                    # Process or save CO2 emissions data as needed
                    
+
                 if step % 10 == 0:
                 # Check for jeepneys and passengers on the same edge
-                    co2_emissions[jeepney_id] = traci.vehicle.getCO2Emission(jeepney_id)
-                        # Process or save CO2 emissions data as needed
-                    with open('Emission Output/emissions.txt', 'a') as f:
-                        f.write(f"Step {step}:\n")
-                        for vehicle_id, co2 in co2_emissions.items():
-                            f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
-
+                  
                     if jeepney_id.startswith("jeepney_") or jeepney_id.startswith("modernjeepney_"):
                         
                         jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
