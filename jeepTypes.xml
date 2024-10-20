@@ -1,6 +1,6 @@
 <additional>
-	<vType id="traditional_jeepney" line="trad_line" accel="1.0" decel="30" sigma="0.5" length="6" minGap="2.5" maxSpeed="8" color="0,1,0" emissionClass="HBEFA3/PC_G_EU4" personCapacity="18" />
-    <vType id="modern_jeepney" accel="1.0" decel="30" sigma="0.5" length="7" minGap="2.5" maxSpeed="12" color="0,0,1" emissionClass="HBEFA3/PC_G_EU6" personCapacity="24" />
+	<vType id="traditional_jeepney" line="trad_line" accel="1.0" decel="30" sigma="0.5" length="6" minGap="2.5" maxSpeed="8" color="0,1,0" emissionClass="HBEFA4/LCV_diesel_M+N1-I_Euro-2" personCapacity="18" />
+    <vType id="modern_jeepney" accel="1.0" decel="30" sigma="0.5" length="7" minGap="2.5" maxSpeed="12" color="0,0,1" emissionClass="HBEFA4/LCV_diesel_M+N1-I_Euro-4" personCapacity="24" />
 	 
 
 	<busStop id="1174874706" x="0.0" y="10.0" lane="1174874706_1"/>

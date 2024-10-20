@@ -20,19 +20,20 @@ def get_random_edges_with_validation(network_edges):
         if len(route.edges) > 0:  # Ensure the route is valid
             return " ".join(route.edges)
 
-# Sample vehicle counts (replace with actual vehicle count data)
+# (replace with actual vehicle count data)
 vehicle_counts_per_interval = {
-    "car": [100, 80, 120, 150, 100],
-    "bicycle": [10, 8, 12, 10, 7],
-    "motorcycle": [50, 40, 60, 70, 45],
-    "truck": [20, 15, 25, 30, 18],
-    "bus": [5, 5, 8, 6, 4],
-    "traditional_jeepney": [15, 12, 18, 20, 14],
-    "modern_jeepney": [10, 9, 14, 15, 12],
+    "car": [32, 57, 50, 45, 48, 31, 36, 33, 31, 39, 36, 34, 45, 36, 33, 49, 51, 56, 49, 46, 60, 51, 57, 54],
+    "motorcycle": [96, 80, 78, 82, 89, 95, 101, 99, 105, 78, 85, 60, 71, 73, 67, 68, 76, 77, 80, 87, 85, 88, 95, 99],
+    "truck": [4, 2, 5, 4, 3, 5, 2, 5, 4, 3, 3, 3, 3, 3, 2, 3, 3, 4, 5, 3, 5, 3, 4, 4],
+    "bus": [0, 1, 0, 0, 1, 0, 1, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+    "traditional_jeepney": [23, 18, 21, 21, 22, 26, 28, 24, 19, 22, 25, 20, 28, 29, 21, 26, 25, 26, 24, 29, 27, 24, 22, 23],
+    "modern_jeepney": [4, 5, 2, 1, 4, 5, 5, 6, 4, 4, 5, 3, 5, 6, 5, 5, 4, 5, 5, 4, 5, 3, 5, 5],
+    "bicycle": [16, 8, 11, 12, 15, 17, 18, 24, 16, 17, 14, 22, 29, 23, 24, 27, 24, 16, 14, 15, 11, 9, 8, 9]
 }
 
+
 # Define the time intervals (in seconds) for 15-minute intervals
-time_intervals = [(i * 15 * 60, (i + 1) * 15 * 60) for i in range(5)]
+time_intervals = [(i * 5 * 60, (i + 1) * 5 * 60) for i in range(24)]  # 24 intervals for 2 hours
 
 # Define the jeepney routes (r_1 and r_2)
 jeepney_routes = {
@@ -51,50 +52,50 @@ vehicles_list = []
 
 # Generate vehicles and routes for each time interval based on Poisson distribution
 vehicle_id = 0
-trad_id= 0
+trad_id = 0
 modern_id = 0
 for interval_index, (start_time, end_time) in enumerate(time_intervals):
     for vtype, counts in vehicle_counts_per_interval.items():
         vehicle_count = counts[interval_index]
-        poisson_times = np.cumsum(np.random.poisson(lam=(end_time - start_time) / vehicle_count, size=vehicle_count))
+        
+        if vehicle_count > 0:  # Check to ensure vehicle_count is greater than zero
+            poisson_times = np.cumsum(np.random.poisson(lam=(end_time - start_time) / vehicle_count, size=vehicle_count))
 
-        for t in poisson_times:
-            if t + start_time < end_time:  # Only add vehicles within the time interval
-                depart_time = t + start_time
-                if vtype == "traditional_jeepney":
-                    vehicle_data = {
-                        "id": f"jeepney_{trad_id}",
-                        "type": vtype,
-                        "depart": str(depart_time)
-                    }
-                    trad_id += 1
-                elif vtype == "modern_jeepney":
-                    vehicle_data = {
-                        "id": f"modernjeepney_{modern_id}",
-                        "type": vtype,
-                        "depart": str(depart_time)
-                    }
-                    modern_id += 1
-                else:    
-                    vehicle_data = {
-                        "id": f"veh_{vehicle_id}",
-                        "type": vtype,
-                        "depart": str(depart_time)
-                    }
-                
-                # Assign a route
-                if vtype in ["traditional_jeepney", "modern_jeepney"]:
-                    # Randomly assign route_1 or route_2 for jeepneys
+            for t in poisson_times:
+                if t + start_time < end_time:  # Only add vehicles within the time interval
+                    depart_time = t + start_time
+                    if vtype == "traditional_jeepney":
+                        vehicle_data = {
+                            "id": f"jeepney_{trad_id}",
+                            "type": vtype,
+                            "depart": str(depart_time)
+                        }
+                        trad_id += 1
+                    elif vtype == "modern_jeepney":
+                        vehicle_data = {
+                            "id": f"modernjeepney_{modern_id}",
+                            "type": vtype,
+                            "depart": str(depart_time)
+                        }
+                        modern_id += 1
+                    else:
+                        vehicle_data = {
+                            "id": f"veh_{vehicle_id}",
+                            "type": vtype,
+                            "depart": str(depart_time)
+                        }
+                    
+                    # Assign a route
+                    if vtype in ["traditional_jeepney", "modern_jeepney"]:
+                        # Randomly assign route_1 or route_2 for jeepneys
+                        route_edges = get_random_route_jeep(jeepney_routes["r_1"], jeepney_routes["r_2"])
+                    else:
+                        # For other vehicle types, assign random valid edges from the network
+                        route_edges = get_random_edges_with_validation(network_edges)
 
-                    route_edges = get_random_route_jeep(jeepney_routes["r_1"], jeepney_routes["r_2"])
-                else:
-                    # For other vehicle types, assign random valid edges from the network
-                    route_edges = get_random_edges_with_validation(network_edges)
-
-                vehicle_data["route"] = route_edges
-                vehicles_list.append(vehicle_data)
-                vehicle_id += 1
-
+                    vehicle_data["route"] = route_edges
+                    vehicles_list.append(vehicle_data)
+                    vehicle_id += 1
 # Sort the vehicle list by departure time
 vehicles_list.sort(key=lambda x: float(x["depart"]))
 
