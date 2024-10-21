@@ -1,0 +1,44 @@
+digraph {
+    // Define nodes
+    State_0 [label="Vehicle"]
+    State_1 [label="Passenger"]
+    State_2 [label="Stoplight"]
+
+    OState_0 [label="Go"]
+    OState_1 [label="1 Lane Right"]
+    OState_2 [label="Load"]
+    OState_3 [label="Stop"]
+    OState_4 [label="1 Lane Left"]
+    OState_5 [label="Unload"]
+    OState_6 [label="Wait"]
+    OState_7 [label="2 Lane Left"]
+    OState_8 [label="2 Lane Right"]
+
+    // Define edges with transition probabilities
+    State_0 -> State_0 [label="0.012"]
+    State_0 -> State_1 [label="0.017"]
+    State_0 -> State_2 [label="0.971"]
+    State_1 -> State_0 [label="0.000"]
+    State_1 -> State_1 [label="0.968"]
+    State_1 -> State_2 [label="0.032"]
+    State_2 -> State_0 [label="0.516"]
+    State_2 -> State_1 [label="0.009"]
+    State_2 -> State_2 [label="0.475"]
+
+    Probability of observing 'Go' = 6.9676
+Probability of observing '1 Lane Right' = 0.0000
+Probability of observing 'Load' = 0.0000
+Probability of observing 'Stop' = 0.0000
+Probability of observing '1 Lane Left' = 0.0000
+Probability of observing 'Unload' = 0.0000
+Probability of observing 'Wait' = 0.0000
+Probability of observing '2 Lane Left' = 0.0000
+Probability of observing '2 Lane Right' = 0.0000
+}
+
+// dot -Tpng hmm_state_diagram.dot -o THMMgraph.png
+
+//       0                    1           2
+// 0 [[1.21723387e-02 1.67396083e-02 9.71088053e-01] 
+// 1  [5.04306923e-30 9.68253675e-01 3.17463251e-02] 
+// 2  [5.16230902e-01 8.79194086e-03 4.74977157e-01]]
