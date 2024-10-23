@@ -9,7 +9,7 @@ def read_emissions_file(filename):
             # Match "Step" line to get the simulation step
             step_match = re.match(r"Step\s+([0-9\.]+):", line)
             if step_match:
-                current_step = float(step_match.group(1))
+                current_step = int(step_match.group(1))  # Ensure it's an integer
             
             # Match "Vehicle" line to get the vehicle id and CO2 emissions
             vehicle_match = re.match(r"\s*Vehicle\s+(\S+):\s+CO2 emissions\s+=\s+([0-9\.]+)\s+g", line)
@@ -23,45 +23,43 @@ def read_emissions_file(filename):
                 })
     return emissions_data
 
-# Function to calculate total CO2 emissions every minute (60 steps)
-def calculate_co2_emissions(emissions_data, step_interval=300):
-    co2_per_minute = []
+# Function to calculate average CO2 emissions per 5-minute interval (300 steps)
+def calculate_avg_co2_emissions(emissions_data, step_interval=300):
+    co2_per_interval = []
     current_time = 0
-    co2_total = 0
-    current_minute_emissions = {}
+    total_co2 = 0
+    step_count = 0
 
     for entry in emissions_data:
         step_time = entry['step']
-        vehicle_id = entry['vehicle_id']
         co2 = entry['CO2']
-        
-        # If we are still within the current minute, sum the CO2 emissions
+
+        # Check if we're still within the current interval
         if step_time < current_time + step_interval:
-            if vehicle_id not in current_minute_emissions:
-                current_minute_emissions[vehicle_id] = co2
-            else:
-                current_minute_emissions[vehicle_id] = max(current_minute_emissions[vehicle_id], co2)
+            total_co2 += co2
+            step_count += 1  # Increment the step count
         else:
-            # Calculate the total CO2 for the current minute
-            co2_total = sum(current_minute_emissions.values())
-            co2_per_minute.append({'Interval': current_time // step_interval, 'CO2_total': co2_total / step_interval})
-
-            # Move to the next minute, reset totals
+            # Calculate the average CO2 for the previous interval
+            avg_co2 = total_co2 / step_count if step_count > 0 else 0
+            co2_per_interval.append({'Interval': current_time // step_interval, 'Average_CO2': avg_co2})
+            
+            # Move to the next interval
             current_time += step_interval
-            current_minute_emissions = {vehicle_id: co2}
+            total_co2 = co2  # Start new interval with the current CO2
+            step_count = 1  # Reset step count
 
-    # Add the last interval if there is remaining data
-    if current_minute_emissions:
-        co2_total = sum(current_minute_emissions.values())
-        co2_per_minute.append({'Interval': current_time // step_interval, 'CO2_total': co2_total})
+    # Add the last interval if there's remaining data
+    if step_count > 0:
+        avg_co2 = total_co2 / step_count
+        co2_per_interval.append({'Interval': current_time // step_interval, 'Average_CO2': avg_co2})
 
-    return co2_per_minute
+    return co2_per_interval
 
 # Example usage:
 filename = "Emission Output/emissions.txt"  # The file where your emissions data is stored
 emissions_data = read_emissions_file(filename)
-co2_by_minute = calculate_co2_emissions(emissions_data)
+co2_by_minute = calculate_avg_co2_emissions(emissions_data)
 
 # Output the results
 for minute_data in co2_by_minute:
-    print(f"Minute {minute_data['Interval']}: Total CO2 = {minute_data['CO2_total']} g")
+    print(f"Interval {minute_data['Interval']}: Average CO2 = {minute_data['Average_CO2']} mg")
