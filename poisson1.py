@@ -33,7 +33,7 @@ vehicle_counts_per_interval = {
 
 
 # Define the time intervals (in seconds) for 15-minute intervals
-time_intervals = [(i * 5 * 60, (i + 1) * 5 * 60) for i in range(24)]  # 24 intervals for 2 hours
+time_intervals = [(i * 5 * 60, (i + 1) * 5 * 60) for i in range(24)]  
 
 # Define the jeepney routes (r_1 and r_2)
 jeepney_routes = {
