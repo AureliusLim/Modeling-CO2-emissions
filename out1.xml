@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-10-21 23:20:39 by Eclipse SUMO GUI Version 1.21.0
+<!-- generated on 2024-10-23 14:34:21 by Eclipse SUMO GUI Version 1.21.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\trimmed.net.xml"/>
-        <route-files value="C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\Passenger_replicate/person_flows_modern4-6.rou.xml,C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\ jeepney_routes.rou.xml,C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\ randomTrips_car3.rou.xml,C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\ randomTrips_bus3.rou.xml,C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\randomTrips_truck3.rou.xml,C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\ randomTrips_motorcycle3.rou.xml,C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\ randomTrips_bicycle3.rou.xml"/>
-        <additional-files value="C:\Users\Aurelius Justin Lim\Documents\Modeling CO2 emissions\jeepTypes.xml"/>
+        <net-file value="edited.net.xml"/>
+        <route-files value="person_flows.rou.xml, jeepney_routes.rou.xml, randomTrips_car1.rou.xml, randomTrips_bus1.rou.xml,randomTrips_truck1.rou.xml, randomTrips_motorcycle1.rou.xml, randomTrips_bicycle1.rou.xml"/>
+        <additional-files value="jeepTypes.xml"/>
     </input>
 
     <time>
@@ -14,43 +14,51 @@
         <end value="7200"/>
     </time>
 
+    <processing>
+        <lateral-resolution value="0.1"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="56435"/>
+    </traci_server>
+
 </sumoConfiguration>
 -->
 
 <detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
-    <interval begin="0.00" end="4313.00" id="intersection#1_1_car" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_1_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_1_truck" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_1_motorcycle" nVehContrib="1" flow="0.83" occupancy="0.01" speed="7.41" harmonicMeanSpeed="7.41" length="2.00" nVehEntered="1"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_1_bicycle" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_2_car" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_2_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_2_truck" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_2_motorcycle" nVehContrib="4" flow="3.34" occupancy="0.02" speed="10.28" harmonicMeanSpeed="10.20" length="2.00" nVehEntered="4"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_2_bicycle" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_3_car" nVehContrib="79" flow="65.94" occupancy="2.83" speed="7.12" harmonicMeanSpeed="3.24" length="5.00" nVehEntered="79"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_3_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_3_truck" nVehContrib="5" flow="4.17" occupancy="0.20" speed="8.06" harmonicMeanSpeed="5.90" length="10.00" nVehEntered="5"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_3_motorcycle" nVehContrib="199" flow="166.10" occupancy="4.78" speed="7.04" harmonicMeanSpeed="1.93" length="2.00" nVehEntered="199"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_3_bicycle" nVehContrib="14" flow="11.69" occupancy="0.13" speed="6.77" harmonicMeanSpeed="5.01" length="2.00" nVehEntered="14"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_4_car" nVehContrib="91" flow="75.96" occupancy="3.28" speed="6.46" harmonicMeanSpeed="3.36" length="5.00" nVehEntered="93"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_4_bus" nVehContrib="2" flow="1.67" occupancy="0.08" speed="8.94" harmonicMeanSpeed="7.24" length="12.00" nVehEntered="2"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_4_truck" nVehContrib="7" flow="5.84" occupancy="1.01" speed="8.63" harmonicMeanSpeed="1.61" length="10.00" nVehEntered="7"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_4_motorcycle" nVehContrib="146" flow="121.86" occupancy="5.74" speed="6.99" harmonicMeanSpeed="1.26" length="2.00" nVehEntered="152"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_4_bicycle" nVehContrib="11" flow="9.18" occupancy="0.09" speed="7.03" harmonicMeanSpeed="5.83" length="2.00" nVehEntered="11"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_5_car" nVehContrib="79" flow="65.94" occupancy="11.42" speed="6.22" harmonicMeanSpeed="0.95" length="5.00" nVehEntered="84"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_5_bus" nVehContrib="2" flow="1.67" occupancy="0.10" speed="5.70" harmonicMeanSpeed="5.57" length="12.00" nVehEntered="2"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_5_truck" nVehContrib="7" flow="5.84" occupancy="1.95" speed="2.98" harmonicMeanSpeed="0.83" length="10.00" nVehEntered="7"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_5_motorcycle" nVehContrib="129" flow="107.67" occupancy="3.97" speed="8.48" harmonicMeanSpeed="1.51" length="2.00" nVehEntered="133"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_5_bicycle" nVehContrib="12" flow="10.02" occupancy="0.21" speed="6.34" harmonicMeanSpeed="2.71" length="2.00" nVehEntered="13"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_6_car" nVehContrib="196" flow="163.60" occupancy="13.72" speed="7.37" harmonicMeanSpeed="0.93" length="2.67" nVehEntered="199"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_6_bus" nVehContrib="196" flow="163.60" occupancy="13.72" speed="7.37" harmonicMeanSpeed="0.93" length="2.67" nVehEntered="199"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_6_truck" nVehContrib="196" flow="163.60" occupancy="13.72" speed="7.37" harmonicMeanSpeed="0.93" length="2.67" nVehEntered="199"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_6_motorcycle" nVehContrib="196" flow="163.60" occupancy="13.72" speed="7.37" harmonicMeanSpeed="0.93" length="2.67" nVehEntered="199"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_6_bicycle" nVehContrib="196" flow="163.60" occupancy="13.72" speed="7.37" harmonicMeanSpeed="0.93" length="2.67" nVehEntered="199"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_7_car" nVehContrib="36" flow="30.05" occupancy="5.28" speed="5.72" harmonicMeanSpeed="0.61" length="3.08" nVehEntered="37"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_7_bus" nVehContrib="36" flow="30.05" occupancy="5.28" speed="5.72" harmonicMeanSpeed="0.61" length="3.08" nVehEntered="37"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_7_truck" nVehContrib="36" flow="30.05" occupancy="5.28" speed="5.72" harmonicMeanSpeed="0.61" length="3.08" nVehEntered="37"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_7_motorcycle" nVehContrib="36" flow="30.05" occupancy="5.28" speed="5.72" harmonicMeanSpeed="0.61" length="3.08" nVehEntered="37"/>
-    <interval begin="0.00" end="4313.00" id="intersection#1_7_bicycle" nVehContrib="36" flow="30.05" occupancy="5.28" speed="5.72" harmonicMeanSpeed="0.61" length="3.08" nVehEntered="37"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_1_car" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_1_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_1_truck" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_1_motorcycle" nVehContrib="1" flow="6.49" occupancy="0.05" speed="7.25" harmonicMeanSpeed="7.25" length="2.00" nVehEntered="1"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_1_bicycle" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_2_car" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_2_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_2_truck" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_2_motorcycle" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_2_bicycle" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_3_car" nVehContrib="8" flow="51.89" occupancy="3.46" speed="4.42" harmonicMeanSpeed="2.08" length="5.00" nVehEntered="8"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_3_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_3_truck" nVehContrib="1" flow="6.49" occupancy="0.32" speed="5.64" harmonicMeanSpeed="5.64" length="10.00" nVehEntered="1"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_3_motorcycle" nVehContrib="16" flow="103.78" occupancy="4.25" speed="4.49" harmonicMeanSpeed="1.36" length="2.00" nVehEntered="16"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_3_bicycle" nVehContrib="1" flow="6.49" occupancy="0.09" speed="4.06" harmonicMeanSpeed="4.06" length="2.00" nVehEntered="1"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_4_car" nVehContrib="9" flow="58.38" occupancy="16.65" speed="3.48" harmonicMeanSpeed="0.49" length="5.00" nVehEntered="9"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_4_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_4_truck" nVehContrib="1" flow="6.49" occupancy="0.43" speed="4.17" harmonicMeanSpeed="4.17" length="10.00" nVehEntered="1"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_4_motorcycle" nVehContrib="26" flow="168.65" occupancy="11.35" speed="5.24" harmonicMeanSpeed="0.83" length="2.00" nVehEntered="26"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_4_bicycle" nVehContrib="2" flow="12.97" occupancy="0.14" speed="5.04" harmonicMeanSpeed="5.04" length="2.00" nVehEntered="2"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_5_car" nVehContrib="9" flow="58.38" occupancy="7.60" speed="5.06" harmonicMeanSpeed="1.15" length="5.00" nVehEntered="10"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_5_bus" nVehContrib="0" flow="0.00" occupancy="0.00" speed="-1.00" harmonicMeanSpeed="-1.00" length="-1.00" nVehEntered="0"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_5_truck" nVehContrib="2" flow="12.97" occupancy="1.45" speed="3.24" harmonicMeanSpeed="2.48" length="10.00" nVehEntered="2"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_5_motorcycle" nVehContrib="26" flow="168.65" occupancy="9.13" speed="6.02" harmonicMeanSpeed="1.03" length="2.00" nVehEntered="26"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_5_bicycle" nVehContrib="2" flow="12.97" occupancy="0.09" speed="8.25" harmonicMeanSpeed="8.15" length="2.00" nVehEntered="2"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_6_car" nVehContrib="12" flow="77.84" occupancy="42.55" speed="7.00" harmonicMeanSpeed="1.45" length="2.75" nVehEntered="16"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_6_bus" nVehContrib="12" flow="77.84" occupancy="42.55" speed="7.00" harmonicMeanSpeed="1.45" length="2.75" nVehEntered="16"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_6_truck" nVehContrib="12" flow="77.84" occupancy="42.55" speed="7.00" harmonicMeanSpeed="1.45" length="2.75" nVehEntered="16"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_6_motorcycle" nVehContrib="12" flow="77.84" occupancy="42.55" speed="7.00" harmonicMeanSpeed="1.45" length="2.75" nVehEntered="16"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_6_bicycle" nVehContrib="12" flow="77.84" occupancy="42.55" speed="7.00" harmonicMeanSpeed="1.45" length="2.75" nVehEntered="16"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_7_car" nVehContrib="8" flow="51.89" occupancy="41.02" speed="3.66" harmonicMeanSpeed="0.29" length="2.38" nVehEntered="9"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_7_bus" nVehContrib="8" flow="51.89" occupancy="41.02" speed="3.66" harmonicMeanSpeed="0.29" length="2.38" nVehEntered="9"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_7_truck" nVehContrib="8" flow="51.89" occupancy="41.02" speed="3.66" harmonicMeanSpeed="0.29" length="2.38" nVehEntered="9"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_7_motorcycle" nVehContrib="8" flow="51.89" occupancy="41.02" speed="3.66" harmonicMeanSpeed="0.29" length="2.38" nVehEntered="9"/>
+    <interval begin="0.00" end="555.00" id="intersection#1_7_bicycle" nVehContrib="8" flow="51.89" occupancy="41.02" speed="3.66" harmonicMeanSpeed="0.29" length="2.38" nVehEntered="9"/>
 </detector>

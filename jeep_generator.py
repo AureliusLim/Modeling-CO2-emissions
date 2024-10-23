@@ -8,14 +8,16 @@ template = Template('''<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-insta
     <!-- Vehicles, persons and containers (sorted by depart) -->
     
    
-    {% for i in range(1, 6) %}
-        <vehicle id="jeepney_{{ i }}" type="traditional_jeepney" route="r_1" depart="0">
-
-        </vehicle>
+    {% for i in range(1, trad_count + 1) %}
                     
-        <vehicle id="modernjeepney_{{ i }}" type="modern_jeepney" route="r_1" depart="0">
-
-        </vehicle>
+    <vehicle id="jeepney_{{ i }}" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    {% endfor %}
+  
+    {% for i in range(1, modern_count + 1) %}
+                    
+    <vehicle id="modernjeepney_{{ i }}" type="modern_jeepney" route="r_1" depart="0"/>
+                    
     {% endfor %}
                 
                     
@@ -23,12 +25,19 @@ template = Template('''<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-insta
                     
 </routes>    ''')
 
-# Render the template
-output = template.render()
+def generate_routes_xml(trad_count, modern_count, output_file='jeepney_routes.rou.xml'):
+    # Render the template with provided counts
+    output = template.render(trad_count=trad_count, modern_count=modern_count)
 
-# Write the output to an XML file
-with open('jeepney_routes.rou.xml', 'w') as file:
-    file.write(output)
+    # Write the output to an XML file
+    with open(output_file, 'w') as file:
+        file.write(output)
 
-print("jeepney_routes.xml file has been generated successfully.")
+    print(f"{output_file} has been generated successfully.")
+
+trad_count = int(input("Enter the number of traditional jeepneys: "))
+modern_count = int(input("Enter the number of modern jeepneys: "))
+
+# Generate the XML file with user inputs
+generate_routes_xml(trad_count, modern_count)
 

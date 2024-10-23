@@ -7,45 +7,11 @@
     
    
     
-        <vehicle id="jeepney_1" type="traditional_jeepney" route="r_1" depart="0">
-         
-        </vehicle>
                     
-        <vehicle id="modernjeepney_1" type="modern_jeepney" route="r_1" depart="0">
-
-        </vehicle>
+    <vehicle id="jeepney_0" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
     
-        <vehicle id="jeepney_2" type="traditional_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-                    
-        <vehicle id="modernjeepney_2" type="modern_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-    
-        <vehicle id="jeepney_3" type="traditional_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-                    
-        <vehicle id="modernjeepney_3" type="modern_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-    
-        <vehicle id="jeepney_4" type="traditional_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-                    
-        <vehicle id="modernjeepney_4" type="modern_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-    
-        <vehicle id="jeepney_5" type="traditional_jeepney" route="r_1" depart="0">
-
-        </vehicle>
-                    
-        <vehicle id="modernjeepney_5" type="modern_jeepney" route="r_1" depart="0">
-
-        </vehicle>
+  
     
                 
                     
