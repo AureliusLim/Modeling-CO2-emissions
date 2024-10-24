@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<!-- 
+    RIDER
+    <person id="person_898" depart="1" departLane="random" departSpeed="1.00" color="0,1,0">
+        <walk from="119883577#8" busStop="119883577#8" speed="1.5"/>
+        <ride line="trad_line" busStop="119883577#8" to="-187486758#1"/>
+        <walk edges="-187486758#1" speed="1.5"/>
+     </person>
+
+     WALKER
+    <person id="person_473" depart="2" departLane="random" departSpeed="1.00" color="1,0,0">
+        <walk from="31"327474#1" busStop="31"327474#1" speed="1.5"/>
+        <stop busStop="31"327474#1" duration="503"/>
+        <walk from="31"327474#1" to="729164042#1" speed="1.5"/>
+    </person>
+
+    STANDER
+    <person id="person_610" depart="2" departLane="random" departSpeed="1.00" color="1,0,1">
+        <walk from="82694445#1" busStop="82694445#1" speed="1.5"/>
+        <stop busStop="82694445#1" duration="1000"/>
+    </person> -->
+<routes>
+
+<!-- Legend of variables
+    depart              Add 10 secs (Spawn time)
+    departLane          random
+    departSpeed         1.00
+    color               0,1,0
+    walk from           EDGE Where person is waiting
+    speed               1.5
+    stop busStop        EDGE Where person will unload
+    duration            Duration of spawn == 3000 seconds
+
+    walk from + busStop = SAME
+    to + Walk edges     = Where to Stop
+ -->
+
+    <!-- Start @ 45:25 timestamp in youtube -->
+    <!-- 1 -->
+    3 stander 1 walker -29377703#2
+
+</routes>
