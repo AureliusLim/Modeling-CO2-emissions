@@ -11,7 +11,79 @@
     <vehicle id="jeepney_0" type="traditional_jeepney" route="r_1" depart="0"/>
                     
     
+                    
+    <vehicle id="jeepney_1" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_2" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_3" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_4" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_5" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_6" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_7" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="jeepney_8" type="traditional_jeepney" route="r_1" depart="0"/>
+                    
+    
   
+    
+                    
+    <vehicle id="modernjeepney_0" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_1" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_2" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_3" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_4" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_5" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_6" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_7" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_8" type="modern_jeepney" route="r_1" depart="0"/>
+                    
+    
+                    
+    <vehicle id="modernjeepney_9" type="modern_jeepney" route="r_1" depart="0"/>
+                    
     
                 
                     
