@@ -176,7 +176,7 @@ def simulate():
                     for vehicle_id, co2 in co2_emissions.items():
                         if(co2 > 0):
                             f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
-            if int(step) % 5 == 0:
+            if int(step) % 2 == 0:
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traditional_id_list + modern_id_list:
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
