@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-10-23 23:11:15 by Eclipse SUMO GUI Version 1.21.0
+<!-- generated on 2024-10-26 21:42:09 by Eclipse SUMO GUI Version 1.21.0
 <sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
-        <net-file value="trimmed.net.xml"/>
-        <route-files value="person_flows.rou.xml, jeepney_routes.rou.xml, randomTrips_car2.rou.xml, randomTrips_bus2.rou.xml,randomTrips_truck2.rou.xml, randomTrips_motorcycle2.rou.xml, randomTrips_bicycle2.rou.xml"/>
+        <net-file value="edited.net.xml"/>
+        <route-files value="Passenger_replicate/person_flows_modern7-9.rou.xml, jeepney_routes.rou.xml, randomTrips_car1.rou.xml, randomTrips_bus1.rou.xml,randomTrips_truck1.rou.xml, randomTrips_motorcycle1.rou.xml, randomTrips_bicycle1.rou.xml"/>
         <additional-files value="jeepTypes.xml"/>
     </input>
 
@@ -14,8 +14,12 @@
         <end value="7200"/>
     </time>
 
+    <processing>
+        <lateral-resolution value="0.2"/>
+    </processing>
+
     <traci_server>
-        <remote-port value="57305"/>
+        <remote-port value="64967"/>
     </traci_server>
 
 </sumoConfiguration>

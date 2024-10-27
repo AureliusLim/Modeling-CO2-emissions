@@ -29,6 +29,24 @@ template = Template('''<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-insta
 
                     
 </routes>    ''')
+def modify_person_xml(file_path, trad_count, modern_count):
+    # Parse the existing XML
+    traditional_jeepneys = [f"jeepney_{i}" for i in range(trad_count)] 
+    modern_jeepneys = [f"modernjeepney_{i}" for i in range(modern_count)]  
+
+    # Combine into a single string with space separation
+    all_jeepney_ids = " ".join(traditional_jeepneys + modern_jeepneys)
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+
+    # Loop through all <person> elements
+    for person in root.findall("person"):
+        for ride in person.findall("ride"):
+            # Modify the lines attribute to include all jeepney IDs
+            ride.set("lines", all_jeepney_ids)
+
+    # Save the modified XML back to the same file (or a new one if needed)
+    tree.write(file_path, encoding="utf-8", xml_declaration=True)
 
 def generate_routes_xml(trad_count, modern_count, output_file='jeepney_routes.rou.xml'):
     # Render the template with provided counts
@@ -118,7 +136,8 @@ modern_id_list = []
 passenger_destinations = {}
 
 # Parse the XML file
-tree = ET.parse('person_flows.rou.xml')
+filename = "Passenger_replicate/person_flows_modern7-9.rou.xml"
+tree = ET.parse(filename)
 root = tree.getroot()
 
 
@@ -176,7 +195,7 @@ def simulate():
                     for vehicle_id, co2 in co2_emissions.items():
                         if(co2 > 0):
                             f.write(f"  Vehicle {vehicle_id}: CO2 emissions = {co2} g\n")
-            if int(step) % 5 == 0:
+            if int(step) % 2 == 0:
                 # Check for jeepneys and passengers on the same edge
                 for jeepney_id in traditional_id_list + modern_id_list:
                     jeepney_edge = traci.vehicle.getRoadID(jeepney_id)
@@ -296,7 +315,7 @@ def simulate():
                                         print(f"Error setting bus stop for jeepney {jeepney_id} at {jeepney_edge}: {e}")
             # Check for passengers reaching their destination
             for passenger_id in list(traci.person.getIDList()):
-                current_edge = traci.person.getRoadID(passenger_id)
+                current_edge = traci.vehicle.getRoadID(jeepney_id)
                 if not is_valid_road_edge(current_edge):
                     continue
 
@@ -354,6 +373,7 @@ modern_count = int(input("Enter the number of modern jeepneys: "))
 
 # Generate the XML file with user inputs
 generate_routes_xml(trad_count, modern_count)
+modify_person_xml(filename, trad_count, modern_count)
 # Validate input range
 if mode in [1, 2, 3]:
     # Assign configFile based on mode
