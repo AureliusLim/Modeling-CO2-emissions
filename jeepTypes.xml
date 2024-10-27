@@ -146,8 +146,8 @@
        length="7" minGap="1.5" maxSpeed="7" 
        color="0,1,0" emissionClass="HBEFA4/LCV_diesel_M+N1-I_Euro-2" personCapacity="18" />
 
-	<vType id="modern_jeepney"
-       line="trad_line" accel="1.2" decel="5.0" sigma="0.5" 
+	<vType id="modern_jeepney" 
+       accel="1.2" decel="5.0" sigma="0.5" 
        length="8" minGap="1.5" maxSpeed="9" 
        color="0,0,1" emissionClass="HBEFA4/LCV_diesel_M+N1-I_Euro-4" personCapacity="24" />
     <!-- <busStop id="jposadas" lane="29377703#2_1" startPos="0.0" endPos="10.0"/>

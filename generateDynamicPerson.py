@@ -115,7 +115,8 @@ def generate_single_person_flow(route_file):
             })
             
             ET.SubElement(person, 'ride', attrib={
-                'from': start_edge,
+                'line': 'trad_line',
+                'busStop': start_edge,
                 'to': end_edge,
             })
             
