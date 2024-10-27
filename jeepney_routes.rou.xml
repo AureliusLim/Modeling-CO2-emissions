@@ -7,11 +7,11 @@
     
    
     
-                    
-    <vehicle id="jeepney_0" type="traditional_jeepney" route="r_1" depart="0"/>
-                    
-    
   
+    
+                    
+    <vehicle id="modernjeepney_0" type="modern_jeepney" route="r_1" depart="0"/>
+                    
     
                 
                     
