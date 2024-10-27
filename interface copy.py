@@ -136,7 +136,7 @@ modern_id_list = []
 passenger_destinations = {}
 
 # Parse the XML file
-filename = "Passenger_replicate/person_flows_modern7-9.rou.xml"
+filename = "person_flows"
 tree = ET.parse(filename)
 root = tree.getroot()
 

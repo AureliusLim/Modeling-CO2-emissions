@@ -1,60 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2024-10-26 21:00:54.445042 by randomTrips.py v1_21_0+0000-d7b3b481c43
+<!-- generated on 2024-10-27 22:55:14.208284 by randomTrips.py v1_21_0+0000-d7b3b481c43
 <configuration>
     <net-file value="edited.net.xml"/>
     <additional-files value="genericVehicle.xml"/>
-    <route-file value="randomTrips_truck1.rou.xml"/>
+    <route-file value="randomTrips_truck2.rou.xml"/>
     <trip-attributes value="type='truck'"/>
-    <insertion-rate value="46.0 46.0"/>
+    <insertion-rate value="61.0 61.0"/>
 </configuration>
 -->
 
 <routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
     <trip id="0" depart="0.00" from="187486755#0" to="-1076442002" type='truck'/>
-    <trip id="1" depart="78.26" from="-303412434" to="-28788646#0" type='truck'/>
-    <trip id="2" depart="156.52" from="29170622#2" to="24164967#0" type='truck'/>
-    <trip id="3" depart="234.78" from="704746731#0" to="-15785439#4" type='truck'/>
-    <trip id="4" depart="313.04" from="1074607188" to="-1110672544" type='truck'/>
-    <trip id="5" depart="391.30" from="-28343787#0" to="126350685#3" type='truck'/>
-    <trip id="6" depart="469.57" from="-1076360289" to="-24248490" type='truck'/>
-    <trip id="7" depart="547.83" from="22729816" to="15785418#1" type='truck'/>
-    <trip id="8" depart="626.09" from="-28343791#0" to="160192346#0" type='truck'/>
-    <trip id="9" depart="704.35" from="421767353#3" to="-1068885503#1" type='truck'/>
-    <trip id="10" depart="782.61" from="418206264" to="24248438#2" type='truck'/>
-    <trip id="11" depart="860.87" from="-825090424#2" to="-191549817" type='truck'/>
-    <trip id="12" depart="939.13" from="894595931" to="-825090424#2" type='truck'/>
-    <trip id="13" depart="1017.39" from="-15785441#4" to="-15785450#2" type='truck'/>
-    <trip id="14" depart="1095.65" from="54338767#1" to="16174062#2" type='truck'/>
-    <trip id="15" depart="1173.91" from="421767353#0" to="28788646#1" type='truck'/>
-    <trip id="16" depart="1252.17" from="154644806#0" to="917450546#0" type='truck'/>
-    <trip id="17" depart="1330.43" from="-960721731#3" to="15785423#2" type='truck'/>
-    <trip id="18" depart="1408.70" from="4588648#0" to="176435844#1" type='truck'/>
-    <trip id="19" depart="1486.96" from="575729108#1" to="15785466" type='truck'/>
-    <trip id="20" depart="1565.22" from="24509303#3" to="-12255029#0" type='truck'/>
-    <trip id="21" depart="1643.48" from="-28788646#1" to="-4478182" type='truck'/>
-    <trip id="22" depart="1721.74" from="-15785418#7" to="-29170628#0" type='truck'/>
-    <trip id="23" depart="1800.00" from="-15785450#5" to="-368461882#1" type='truck'/>
-    <trip id="24" depart="1878.26" from="182972260" to="-924607338" type='truck'/>
-    <trip id="25" depart="1956.52" from="-925826461" to="-255984631#0" type='truck'/>
-    <trip id="26" depart="2034.78" from="-303412427#4" to="825090434#1" type='truck'/>
-    <trip id="27" depart="2113.04" from="20816626#0" to="161754855#0" type='truck'/>
-    <trip id="28" depart="2191.30" from="-22751310#2" to="28788646#1" type='truck'/>
-    <trip id="29" depart="2269.57" from="-22751216#3" to="1035321070#1" type='truck'/>
-    <trip id="30" depart="2347.83" from="945948203" to="187486755#1" type='truck'/>
-    <trip id="31" depart="2426.09" from="15785439#1" to="24247758#1" type='truck'/>
-    <trip id="32" depart="2504.35" from="5019952#1" to="303412428#2" type='truck'/>
-    <trip id="33" depart="2582.61" from="-28788664#1" to="-1182394701" type='truck'/>
-    <trip id="34" depart="2660.87" from="-575729555" to="-303412428#2" type='truck'/>
-    <trip id="35" depart="2739.13" from="-255984629#2" to="82694445#0" type='truck'/>
-    <trip id="36" depart="2817.39" from="615478345" to="-615456193#2" type='truck'/>
-    <trip id="37" depart="2895.65" from="22751216#5" to="1069841143#2" type='truck'/>
-    <trip id="38" depart="2973.91" from="799741449#1" to="118784832#1" type='truck'/>
-    <trip id="39" depart="3052.17" from="-303412427#2" to="-29377703#3" type='truck'/>
-    <trip id="40" depart="3130.43" from="15785441#1" to="-303412427#5" type='truck'/>
-    <trip id="41" depart="3208.70" from="160192335" to="71942407" type='truck'/>
-    <trip id="42" depart="3286.96" from="1069841143#2" to="-28347151#1" type='truck'/>
-    <trip id="43" depart="3365.22" from="9495525" to="136822571#1" type='truck'/>
-    <trip id="44" depart="3443.48" from="-15785441#1" to="-12255066#1" type='truck'/>
-    <trip id="45" depart="3521.74" from="-15785493" to="176438187" type='truck'/>
+    <trip id="1" depart="59.02" from="-303412434" to="-28788646#0" type='truck'/>
+    <trip id="2" depart="118.03" from="29170622#2" to="24164967#0" type='truck'/>
+    <trip id="3" depart="177.05" from="704746731#0" to="-15785439#4" type='truck'/>
+    <trip id="4" depart="236.07" from="1074607188" to="-1110672544" type='truck'/>
+    <trip id="5" depart="295.08" from="-28343787#0" to="126350685#3" type='truck'/>
+    <trip id="6" depart="354.10" from="-1076360289" to="-24248490" type='truck'/>
+    <trip id="7" depart="413.11" from="22729816" to="15785418#1" type='truck'/>
+    <trip id="8" depart="472.13" from="-28343791#0" to="160192346#0" type='truck'/>
+    <trip id="9" depart="531.15" from="421767353#3" to="-1068885503#1" type='truck'/>
+    <trip id="10" depart="590.16" from="418206264" to="24248438#2" type='truck'/>
+    <trip id="11" depart="649.18" from="-825090424#2" to="-191549817" type='truck'/>
+    <trip id="12" depart="708.20" from="894595931" to="-825090424#2" type='truck'/>
+    <trip id="13" depart="767.21" from="-15785441#4" to="-15785450#2" type='truck'/>
+    <trip id="14" depart="826.23" from="54338767#1" to="16174062#2" type='truck'/>
+    <trip id="15" depart="885.25" from="421767353#0" to="28788646#1" type='truck'/>
+    <trip id="16" depart="944.26" from="154644806#0" to="917450546#0" type='truck'/>
+    <trip id="17" depart="1003.28" from="-960721731#3" to="15785423#2" type='truck'/>
+    <trip id="18" depart="1062.30" from="4588648#0" to="176435844#1" type='truck'/>
+    <trip id="19" depart="1121.31" from="575729108#1" to="15785466" type='truck'/>
+    <trip id="20" depart="1180.33" from="24509303#3" to="-12255029#0" type='truck'/>
+    <trip id="21" depart="1239.34" from="-28788646#1" to="-4478182" type='truck'/>
+    <trip id="22" depart="1298.36" from="-15785418#7" to="-29170628#0" type='truck'/>
+    <trip id="23" depart="1357.38" from="-15785450#5" to="-368461882#1" type='truck'/>
+    <trip id="24" depart="1416.39" from="182972260" to="-924607338" type='truck'/>
+    <trip id="25" depart="1475.41" from="-925826461" to="-255984631#0" type='truck'/>
+    <trip id="26" depart="1534.43" from="-303412427#4" to="825090434#1" type='truck'/>
+    <trip id="27" depart="1593.44" from="20816626#0" to="161754855#0" type='truck'/>
+    <trip id="28" depart="1652.46" from="-22751310#2" to="28788646#1" type='truck'/>
+    <trip id="29" depart="1711.48" from="-22751216#3" to="1035321070#1" type='truck'/>
+    <trip id="30" depart="1770.49" from="945948203" to="187486755#1" type='truck'/>
+    <trip id="31" depart="1800.00" from="15785439#1" to="24247758#1" type='truck'/>
+    <trip id="32" depart="1859.02" from="5019952#1" to="303412428#2" type='truck'/>
+    <trip id="33" depart="1918.03" from="-28788664#1" to="-1182394701" type='truck'/>
+    <trip id="34" depart="1977.05" from="-575729555" to="-303412428#2" type='truck'/>
+    <trip id="35" depart="2036.07" from="-255984629#2" to="82694445#0" type='truck'/>
+    <trip id="36" depart="2095.08" from="615478345" to="-615456193#2" type='truck'/>
+    <trip id="37" depart="2154.10" from="22751216#5" to="1069841143#2" type='truck'/>
+    <trip id="38" depart="2213.11" from="799741449#1" to="118784832#1" type='truck'/>
+    <trip id="39" depart="2272.13" from="-303412427#2" to="-29377703#3" type='truck'/>
+    <trip id="40" depart="2331.15" from="15785441#1" to="-303412427#5" type='truck'/>
+    <trip id="41" depart="2390.16" from="160192335" to="71942407" type='truck'/>
+    <trip id="42" depart="2449.18" from="1069841143#2" to="-28347151#1" type='truck'/>
+    <trip id="43" depart="2508.20" from="9495525" to="136822571#1" type='truck'/>
+    <trip id="44" depart="2567.21" from="-15785441#1" to="-12255066#1" type='truck'/>
+    <trip id="45" depart="2626.23" from="-15785493" to="176438187" type='truck'/>
+    <trip id="46" depart="2685.25" from="34544814#1" to="1074607189#1" type='truck'/>
+    <trip id="47" depart="2744.26" from="-132686162" to="1035321071#1" type='truck'/>
+    <trip id="48" depart="2803.28" from="9495515#2" to="150158647#1" type='truck'/>
+    <trip id="49" depart="2862.30" from="917450545" to="563391736#1" type='truck'/>
+    <trip id="50" depart="2921.31" from="-1069841143#2" to="28343791#1" type='truck'/>
+    <trip id="51" depart="2980.33" from="24247741" to="154644806#1" type='truck'/>
+    <trip id="52" depart="3039.34" from="-303412427#4" to="187486755#2" type='truck'/>
+    <trip id="53" depart="3098.36" from="-15833743#1" to="1085331331#1" type='truck'/>
+    <trip id="54" depart="3157.38" from="118783734#2" to="8598773#2" type='truck'/>
+    <trip id="55" depart="3216.39" from="615478345" to="-303412427#5" type='truck'/>
+    <trip id="56" depart="3275.41" from="126342429" to="-24158358#5" type='truck'/>
+    <trip id="57" depart="3334.43" from="799741448" to="615456193#2" type='truck'/>
+    <trip id="58" depart="3393.44" from="-48627096#1" to="187486755#0" type='truck'/>
+    <trip id="59" depart="3452.46" from="161754854#2" to="-187486758#5" type='truck'/>
+    <trip id="60" depart="3511.48" from="303412427#11" to="154644806#4" type='truck'/>
+    <trip id="61" depart="3570.49" from="303412433#1" to="150158647#2" type='truck'/>
 </routes>
