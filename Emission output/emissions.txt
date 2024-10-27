@@ -1,0 +1,2190 @@
+Step 0:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 2:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 3:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 4:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 5:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 6:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 7:
+  Vehicle modernjeepney_0: CO2 emissions = 1536.377026856028 g
+Step 8:
+  Vehicle modernjeepney_0: CO2 emissions = 1486.9689218212231 g
+Step 9:
+  Vehicle modernjeepney_0: CO2 emissions = 1518.0841778593347 g
+Step 10:
+  Vehicle modernjeepney_0: CO2 emissions = 1892.8113602465933 g
+Step 11:
+  Vehicle modernjeepney_0: CO2 emissions = 2296.761719679604 g
+Step 12:
+  Vehicle modernjeepney_0: CO2 emissions = 1942.0751084657002 g
+Step 13:
+  Vehicle modernjeepney_0: CO2 emissions = 2809.5188244349665 g
+Step 14:
+  Vehicle modernjeepney_0: CO2 emissions = 3121.089979987277 g
+Step 15:
+  Vehicle modernjeepney_0: CO2 emissions = 3456.70644597955 g
+Step 16:
+  Vehicle modernjeepney_0: CO2 emissions = 1888.8179424497846 g
+Step 17:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 18:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 19:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 20:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 21:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 22:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 23:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 24:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 25:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 26:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 27:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 28:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 29:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 30:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 31:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 32:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 33:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 34:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 35:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 36:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 37:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 38:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 39:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 0:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 2:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 3:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 4:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 5:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 6:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 7:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 8:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 9:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 10:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 11:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 12:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 13:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 14:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 15:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 16:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 17:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 18:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 19:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 20:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 21:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 22:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 23:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 24:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 25:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 26:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 27:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 28:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 29:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 30:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 31:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 32:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 33:
+Step 34:
+Step 35:
+  Vehicle modernjeepney_0: CO2 emissions = 711.9179999999981 g
+Step 36:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 37:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 38:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 39:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 40:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 41:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 42:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 43:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 44:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 45:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 46:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 47:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 48:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 49:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 50:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 51:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 52:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 53:
+  Vehicle modernjeepney_0: CO2 emissions = 1275.95535271722 g
+Step 54:
+Step 55:
+Step 56:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 57:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 58:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 59:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 60:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 61:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 62:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 63:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 64:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 65:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 66:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 67:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 68:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 69:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 70:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 71:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 72:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 73:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 74:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 75:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 76:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 77:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 78:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 79:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 80:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 81:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 82:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 83:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 84:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 85:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 86:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 87:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 88:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 89:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 90:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 91:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 92:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 93:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 94:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 95:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 96:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 97:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 98:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 99:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 100:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 101:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 102:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 103:
+Step 104:
+Step 105:
+Step 106:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7999999999979 g
+Step 107:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 108:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 109:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 110:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 111:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 112:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 113:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 114:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 115:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 116:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 117:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 118:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 119:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 120:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 121:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 122:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 123:
+Step 124:
+Step 125:
+  Vehicle modernjeepney_0: CO2 emissions = 377.0835000000004 g
+Step 126:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 127:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 128:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 129:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 130:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 131:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 132:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 133:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 134:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 135:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 136:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 137:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 138:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 139:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 140:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 141:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 142:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 143:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 144:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 145:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 146:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 147:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 148:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 149:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 150:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 151:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 152:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 153:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 154:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 155:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 156:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 157:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 158:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 159:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 160:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 161:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 162:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 163:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 164:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 165:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 166:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 167:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 168:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 169:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 170:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 171:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 172:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 173:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 174:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 175:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 176:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 177:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 178:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 179:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 180:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 181:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 182:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 183:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 184:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 185:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 186:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 187:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 188:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 189:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 190:
+Step 191:
+Step 192:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 193:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 194:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 195:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 196:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 197:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 198:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 199:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 200:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 201:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 202:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 203:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 204:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 205:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 206:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 207:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 208:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 209:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 210:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 211:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 212:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 213:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 214:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 215:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 216:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 217:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 218:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 219:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 220:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 221:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 222:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 223:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 224:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 225:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 226:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 227:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 228:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 229:
+  Vehicle modernjeepney_0: CO2 emissions = 1149.7225481818125 g
+Step 230:
+  Vehicle modernjeepney_0: CO2 emissions = 1374.8088734674475 g
+Step 231:
+  Vehicle modernjeepney_0: CO2 emissions = 1623.4643554388817 g
+Step 232:
+  Vehicle modernjeepney_0: CO2 emissions = 1243.8806207365294 g
+Step 233:
+  Vehicle modernjeepney_0: CO2 emissions = 1593.371585542413 g
+Step 234:
+Step 235:
+  Vehicle modernjeepney_0: CO2 emissions = 598.6077570410315 g
+Step 236:
+  Vehicle modernjeepney_0: CO2 emissions = 1355.0445618782817 g
+Step 237:
+  Vehicle modernjeepney_0: CO2 emissions = 1347.2429832477965 g
+Step 238:
+  Vehicle modernjeepney_0: CO2 emissions = 1537.483504168618 g
+Step 239:
+  Vehicle modernjeepney_0: CO2 emissions = 1857.9821340762949 g
+Step 240:
+  Vehicle modernjeepney_0: CO2 emissions = 2029.658228866866 g
+Step 241:
+  Vehicle modernjeepney_0: CO2 emissions = 1840.3248772203108 g
+Step 242:
+  Vehicle modernjeepney_0: CO2 emissions = 2190.26025607308 g
+Step 243:
+  Vehicle modernjeepney_0: CO2 emissions = 1407.7650416711213 g
+Step 244:
+  Vehicle modernjeepney_0: CO2 emissions = 1920.8655956115042 g
+Step 245:
+Step 246:
+  Vehicle modernjeepney_0: CO2 emissions = 2788.7849550941996 g
+Step 247:
+  Vehicle modernjeepney_0: CO2 emissions = 3098.7304366894236 g
+Step 248:
+  Vehicle modernjeepney_0: CO2 emissions = 2712.3118177425745 g
+Step 249:
+Step 250:
+Step 251:
+Step 252:
+  Vehicle modernjeepney_0: CO2 emissions = 2063.5043608776646 g
+Step 253:
+  Vehicle modernjeepney_0: CO2 emissions = 2158.5537488048294 g
+Step 254:
+  Vehicle modernjeepney_0: CO2 emissions = 2094.3131213074503 g
+Step 255:
+  Vehicle modernjeepney_0: CO2 emissions = 2232.72509378224 g
+Step 256:
+  Vehicle modernjeepney_0: CO2 emissions = 2235.5535243057916 g
+Step 257:
+  Vehicle modernjeepney_0: CO2 emissions = 3439.1499178216704 g
+Step 258:
+  Vehicle modernjeepney_0: CO2 emissions = 3798.6211946292956 g
+Step 259:
+  Vehicle modernjeepney_0: CO2 emissions = 4184.296422679984 g
+Step 260:
+  Vehicle modernjeepney_0: CO2 emissions = 4597.282904373734 g
+Step 261:
+  Vehicle modernjeepney_0: CO2 emissions = 4668.360610180975 g
+Step 262:
+Step 263:
+Step 264:
+Step 265:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7999999999984 g
+Step 266:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 267:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 268:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 269:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 270:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 271:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 272:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 273:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 274:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 275:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 276:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 277:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 278:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 279:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 280:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 281:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 282:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 283:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 284:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 285:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 286:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 287:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 288:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 289:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 290:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 291:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 292:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 293:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 294:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 295:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 296:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 297:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 298:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 299:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 300:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 301:
+Step 302:
+Step 303:
+  Vehicle modernjeepney_0: CO2 emissions = 1918.7082443410286 g
+Step 304:
+Step 305:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 306:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 307:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 308:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 309:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 310:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 311:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 312:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 313:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 314:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 315:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 316:
+Step 317:
+  Vehicle modernjeepney_0: CO2 emissions = 637.4582999999997 g
+Step 318:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 319:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 320:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 321:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 322:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 323:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 324:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 325:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 326:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 327:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 328:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 329:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 330:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 331:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 332:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 333:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 334:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 335:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 336:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 337:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 338:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 339:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 340:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 341:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 342:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 343:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 344:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 345:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 346:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 347:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 348:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 349:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 350:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 351:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 352:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 353:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 354:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 355:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 356:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 357:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 358:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 359:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 360:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 361:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 362:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 363:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 364:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 365:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 366:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 367:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 368:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 369:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 370:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 371:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 372:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 373:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 374:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 375:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 376:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 377:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 378:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 379:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 380:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 381:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 382:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 383:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 384:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 385:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 386:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 387:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 388:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 389:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 390:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 391:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 392:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 393:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 394:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 395:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 396:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 397:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 398:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 399:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 400:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 401:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 402:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 403:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 404:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 405:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 406:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 407:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 408:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 409:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 410:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 411:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 412:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 413:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 414:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 415:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 416:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 417:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 418:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 419:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 420:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 421:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 422:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 423:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 424:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 425:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 426:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 427:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 428:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 429:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 430:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 431:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 432:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 433:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 434:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 435:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 436:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 437:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 438:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 439:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 440:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 441:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 442:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 443:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 444:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 445:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 446:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 447:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 448:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 449:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 450:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 451:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 452:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 453:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 454:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 455:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 456:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 457:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 458:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 459:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 460:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 461:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 462:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 463:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 464:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 465:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 466:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 467:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 468:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 469:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 470:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 471:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 472:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 473:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 474:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 475:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 476:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 477:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 478:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 479:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 480:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 481:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 482:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 483:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 484:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 485:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 486:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 487:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 488:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 489:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 490:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 491:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 492:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 493:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 494:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 495:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 496:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 497:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 498:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 499:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 500:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 501:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 502:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 503:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 504:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 505:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 506:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 507:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 508:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 509:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 510:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 511:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 512:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 513:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 514:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 515:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 516:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 517:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 518:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 519:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 520:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 521:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 522:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 523:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 524:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 525:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 526:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 527:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 528:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 529:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 530:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 531:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 532:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 533:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 534:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 535:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 536:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 537:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 538:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 539:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 540:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 541:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 542:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 543:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 544:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 545:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 546:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 547:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 548:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 549:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 550:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 551:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 552:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 553:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 554:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 555:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 556:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 557:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 558:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 559:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 560:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 561:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 562:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 563:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 564:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 565:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 566:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 567:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 568:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 569:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 570:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 571:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 572:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 573:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 574:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 575:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 576:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 577:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 578:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 579:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 580:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 581:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 582:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 583:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 584:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 585:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 586:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 587:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 588:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 589:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 590:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 591:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 592:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 593:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 594:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 595:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 596:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 597:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 598:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 599:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 600:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 601:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 602:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 603:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 604:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 605:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 606:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 607:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 608:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 609:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 610:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 611:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 612:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 613:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 614:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 615:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 616:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 617:
+Step 618:
+Step 619:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 620:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 621:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 622:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 623:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 624:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 625:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 626:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 627:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 628:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 629:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 630:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 631:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 632:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 633:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 634:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 635:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 636:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 637:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 638:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 639:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 640:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 641:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 642:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 643:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 644:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 645:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 646:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 647:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 648:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 649:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 650:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 651:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 652:
+  Vehicle modernjeepney_0: CO2 emissions = 1022.9967070154892 g
+Step 653:
+Step 654:
+Step 655:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7999999999988 g
+Step 656:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 657:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 658:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 659:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 660:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 661:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 662:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 663:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 664:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 665:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 666:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 667:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 668:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 669:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 670:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 671:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 672:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 673:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 674:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 675:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 676:
+Step 677:
+Step 678:
+  Vehicle modernjeepney_0: CO2 emissions = 501.18300000000033 g
+Step 679:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7999999999996 g
+Step 680:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 681:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 682:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 683:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 684:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 685:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 686:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 687:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 688:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 689:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 690:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 691:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 692:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 693:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 694:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 695:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 696:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.6945999999994 g
+Step 697:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 698:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 699:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 700:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 701:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 702:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 703:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 704:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 705:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 706:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 707:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 708:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 709:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 710:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 711:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 712:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 713:
+Step 714:
+Step 715:
+  Vehicle modernjeepney_0: CO2 emissions = 245.95949999999803 g
+Step 716:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7999999999985 g
+Step 717:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 718:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 719:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 720:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 721:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 722:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 723:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 724:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 725:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 726:
+  Vehicle modernjeepney_0: CO2 emissions = 1348.621726969732 g
+Step 727:
+  Vehicle modernjeepney_0: CO2 emissions = 651.5073000000014 g
+Step 728:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7999999999985 g
+Step 729:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 730:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 731:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 732:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 733:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 734:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 735:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 736:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 737:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 738:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 739:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 740:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 741:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 742:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 743:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 744:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 745:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 746:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 747:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 748:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 749:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 750:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 751:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 752:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 753:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 754:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 755:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 756:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 757:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 758:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 759:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 760:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 761:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 762:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 763:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 764:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 765:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 766:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 767:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 768:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 769:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 770:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 771:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 772:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 773:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 774:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 775:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 776:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 777:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 778:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 779:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 780:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 781:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 782:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 783:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 784:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 785:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 786:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 787:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 788:
+  Vehicle modernjeepney_0: CO2 emissions = 964.9655890779654 g
+Step 789:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.5367742025908 g
+Step 790:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.5053050613103 g
+Step 791:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.827052304031 g
+Step 792:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.6093183307507 g
+Step 793:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.959405541471 g
+Step 794:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.9846163361913 g
+Step 795:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.792253114911 g
+Step 796:
+  Vehicle modernjeepney_0: CO2 emissions = 2423.069506999999 g
+Step 797:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 798:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 799:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 800:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 801:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 802:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 803:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 804:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 805:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 806:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 807:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 808:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 809:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 810:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 811:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 812:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 813:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 814:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 815:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 816:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 817:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 818:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 819:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 820:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 821:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 822:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 823:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 824:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 825:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 826:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 827:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 828:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 829:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 830:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 831:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 832:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 833:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 834:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 835:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 836:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 837:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 838:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 839:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 840:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 841:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 842:
+  Vehicle modernjeepney_0: CO2 emissions = 1298.5272 g
+Step 843:
+Step 844:
+Step 845:
+Step 846:
+  Vehicle modernjeepney_0: CO2 emissions = 964.799999999998 g
+Step 847:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 848:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 849:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 850:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 851:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 852:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 853:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 854:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 855:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 856:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 857:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 858:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 859:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 860:
+  Vehicle modernjeepney_0: CO2 emissions = 2738.8776000000003 g
+Step 861:
+  Vehicle modernjeepney_0: CO2 emissions = 3044.8963584000003 g
+Step 862:
+  Vehicle modernjeepney_0: CO2 emissions = 3374.6972352000007 g
+Step 863:
+  Vehicle modernjeepney_0: CO2 emissions = 2045.8631275217565 g
+Step 864:
+Step 865:
+Step 866:
+  Vehicle modernjeepney_0: CO2 emissions = 1011.8410688397654 g
+Step 867:
+  Vehicle modernjeepney_0: CO2 emissions = 1310.5004985161386 g
+Step 868:
+  Vehicle modernjeepney_0: CO2 emissions = 1422.5563974192 g
+Step 869:
+  Vehicle modernjeepney_0: CO2 emissions = 1447.1820159873769 g
+Step 870:
+  Vehicle modernjeepney_0: CO2 emissions = 1644.1381382835582 g
+Step 871:
+  Vehicle modernjeepney_0: CO2 emissions = 1753.218627121462 g
+Step 872:
+  Vehicle modernjeepney_0: CO2 emissions = 1939.189094843496 g
+Step 873:
+Step 874:
+Step 875:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 876:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 877:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 878:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 879:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 880:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 881:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 882:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 883:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 884:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 885:
+  Vehicle modernjeepney_0: CO2 emissions = 1730.4777024 g
+Step 886:
+  Vehicle modernjeepney_0: CO2 emissions = 1952.4410111999998 g
+Step 887:
+  Vehicle modernjeepney_0: CO2 emissions = 2193.757228799999 g
+Step 888:
+  Vehicle modernjeepney_0: CO2 emissions = 2455.5336576000004 g
+Step 889:
+Step 890:
+  Vehicle modernjeepney_0: CO2 emissions = 662.8309686084382 g
+Step 891:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 892:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 893:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 894:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 895:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 896:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 897:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 898:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 899:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 900:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 901:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 902:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 903:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 904:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 905:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 906:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 907:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 908:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 909:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 910:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 911:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 912:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 913:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 914:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 915:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 916:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 917:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 918:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 919:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 920:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 921:
+  Vehicle modernjeepney_0: CO2 emissions = 1171.5423331998802 g
+Step 922:
+  Vehicle modernjeepney_0: CO2 emissions = 1123.6920280169902 g
+Step 923:
+  Vehicle modernjeepney_0: CO2 emissions = 1427.7796768205635 g
+Step 924:
+  Vehicle modernjeepney_0: CO2 emissions = 1480.9353169309463 g
+Step 925:
+  Vehicle modernjeepney_0: CO2 emissions = 1817.4093070913557 g
+Step 926:
+  Vehicle modernjeepney_0: CO2 emissions = 1665.4771124407293 g
+Step 927:
+  Vehicle modernjeepney_0: CO2 emissions = 956.6646034793582 g
+Step 928:
+Step 929:
+  Vehicle modernjeepney_0: CO2 emissions = 907.1416882688179 g
+Step 930:
+  Vehicle modernjeepney_0: CO2 emissions = 945.6479481456759 g
+Step 931:
+  Vehicle modernjeepney_0: CO2 emissions = 952.2981407928648 g
+Step 932:
+  Vehicle modernjeepney_0: CO2 emissions = 962.7134824595314 g
+Step 933:
+  Vehicle modernjeepney_0: CO2 emissions = 962.6043150320389 g
+Step 934:
+  Vehicle modernjeepney_0: CO2 emissions = 964.7140329591192 g
+Step 935:
+  Vehicle modernjeepney_0: CO2 emissions = 964.6830507972905 g
+Step 936:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 937:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 938:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 939:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 940:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 941:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 942:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 943:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 944:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 945:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 946:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 947:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 948:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 949:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 950:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 951:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 952:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 953:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 954:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 955:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 956:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 957:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 958:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 959:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 960:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 961:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 962:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 963:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 964:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 965:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 966:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 967:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 968:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 969:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 970:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 971:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 972:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 973:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 974:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 975:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 976:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 977:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 978:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 979:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 980:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 981:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 982:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 983:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 984:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 985:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 986:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 987:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 988:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 989:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 990:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 991:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 992:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 993:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 994:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 995:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 996:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 997:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 998:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 999:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1000:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1001:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1002:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1003:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1004:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1005:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1006:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1007:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1008:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1009:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1010:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1011:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1012:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1013:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1014:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1015:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1016:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1017:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1018:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1019:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1020:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1021:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1022:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1023:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1024:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1025:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1026:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1027:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1028:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1029:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1030:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1031:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1032:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1033:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1034:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1035:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1036:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1037:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1038:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1039:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1040:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1041:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1042:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1043:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1044:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1045:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1046:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1047:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1048:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1049:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1050:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1051:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1052:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1053:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1054:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1055:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1056:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1057:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1058:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1059:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1060:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1061:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1062:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1063:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1064:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1065:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1066:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1067:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1068:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1069:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1070:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1071:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1072:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1073:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g
+Step 1074:
+  Vehicle modernjeepney_0: CO2 emissions = 964.8 g

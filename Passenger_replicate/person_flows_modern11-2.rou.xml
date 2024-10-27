@@ -29,7 +29,7 @@
     walk from           EDGE Where person is waiting
     speed               1.5
     stop busStop        EDGE Where person will unload
-    duration            Duration of spawn == 3000 seconds
+    duration            Duration of spawn == 7200 seconds
 
     walk from + busStop = SAME
     to + Walk edges     = Where to Stop
@@ -45,428 +45,428 @@
 <person id="person_1" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-29377703#1" busStop="-29377703#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-29377703#1" to="16174062#4"/>
-    <walk edges="-29377703#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 2 -->
 <person id="person_2" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-29377703#1" busStop="-29377703#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-29377703#1" to="16174062#4"/>
-    <walk edges="-29377703#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 3 -->
 <person id="person_3" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-29377703#1" busStop="-29377703#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-29377703#1" to="16174062#4"/>
-    <walk edges="-29377703#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 4 -->
 <person id="person_4" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-29377703#1" busStop="-29377703#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-29377703#1" to="16174062#4"/>
-    <walk edges="-29377703#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 5 -->
 <person id="person_5" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-29377703#1" busStop="-29377703#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-29377703#1" to="16174062#4"/>
-    <walk edges="-29377703#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 02; (0182,02,01)-->
 
 <!-- RIDER 6 -->
-<person id="person_6" depart="172" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_6" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="29377703#3" to="16174062#4"/>
-    <walk edges="29377703#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- STANDER 1 -->
-<person id="person_7" depart="2" departLane="random" departSpeed="1.00" color="1,0,0">
-    <walk from="-29377703#1" busStop="29377703#3" speed="1.5"/>
-    <stop busStop="29377703#3" duration="3000"/>
+<person id="person_7" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
+    <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
+    <stop busStop="29377703#3" duration="7200"/>
 </person>
 
 
 <!-- 03; (0226,05,05)-->
 
 <!-- RIDER 7 -->
-<person id="person_7" depart="216" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_8" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="29377703#3" to="16174062#4"/>
-    <walk edges="29377703#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 8 -->
-<person id="person_8" depart="216" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_9" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="29377703#3" to="16174062#4"/>
-    <walk edges="29377703#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 9 -->
-<person id="person_9" depart="216" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_10" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="29377703#3" to="16174062#4"/>
-    <walk edges="29377703#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 10 -->
-<person id="person_10" depart="216" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_11" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="29377703#3" to="16174062#4"/>
-    <walk edges="29377703#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 11 -->
-<person id="person_11" depart="216" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_12" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="29377703#3" busStop="29377703#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="29377703#3" to="16174062#4"/>
-    <walk edges="29377703#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 04; (0273,05,03)-->
 
 <!-- RIDER 12 -->
-<person id="person_12" depart="263" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_13" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#0" busStop="303412427#0" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#0" to="16174062#4"/>
-    <walk edges="303412427#0" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 13 -->
-<person id="person_13" depart="263" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_14" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#0" busStop="303412427#0" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#0" to="16174062#4"/>
-    <walk edges="303412427#0" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 14 -->
-<person id="person_14" depart="263" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_15" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#0" busStop="303412427#0" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#0" to="16174062#4"/>
-    <walk edges="303412427#0" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 15 -->
-<person id="person_15" depart="263" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_16" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#0" busStop="303412427#0" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#0" to="16174062#4"/>
-    <walk edges="303412427#0" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 16 -->
-<person id="person_16" depart="263" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_17" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#0" busStop="303412427#0" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#0" to="16174062#4"/>
-    <walk edges="303412427#0" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 05; (0372,02,02)-->
 
 <!-- RIDER 17 -->
-<person id="person_17" depart="362" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_18" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#3" busStop="303412427#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#3" to="16174062#4"/>
-    <walk edges="303412427#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 18 -->
-<person id="person_18" depart="362" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_19" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#3" busStop="303412427#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#3" to="16174062#4"/>
-    <walk edges="303412427#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 06; (0424,03,01)-->
 
 <!-- RIDER 19 -->
-<person id="person_19" depart="414" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_20" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#3" busStop="303412427#3" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#3" to="16174062#4"/>
-    <walk edges="303412427#3" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- STANDER 2 -->
-<person id="person_20" depart="414" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_21" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="303412427#2" busStop="303412427#3" speed="1.5"/>
-    <stop busStop="303412427#3" duration="3000"/>
+    <stop busStop="303412427#3" duration="7200"/>
 </person>
 <!-- STANDER 3 -->
-<person id="person_21" depart="414" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_22" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="303412427#2" busStop="303412427#3" speed="1.5"/>
-    <stop busStop="303412427#3" duration="3000"/>
+    <stop busStop="303412427#3" duration="7200"/>
 </person>
 
 <!-- 07; (0514,01,01)-->
 
 <!-- RIDER 20 -->
-<person id="person_22" depart="504" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_23" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="303412427#14" busStop="303412427#14" speed="1.5"/>
     <ride lines="modernjeepney_0" from="303412427#14" to="16174062#4"/>
-    <walk edges="303412427#14" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 08; (0718,01,01)-->
 
 <!-- RIDER 21 -->
-<person id="person_23" depart="708" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_24" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="615456195" busStop="615456195" speed="1.5"/>
     <ride lines="modernjeepney_0" from="615456195" to="16174062#4"/>
-    <walk edges="615456195" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 09; (1017,06,05)-->
 
 <!-- RIDER 22 -->
-<person id="person_24" depart="1007" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_25" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="368461882#1" busStop="368461882#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="368461882#1" to="16174062#4"/>
-    <walk edges="368461882#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 23 -->
-<person id="person_25" depart="1007" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_26" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="368461882#1" busStop="368461882#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="368461882#1" to="16174062#4"/>
-    <walk edges="368461882#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 24 -->
-<person id="person_26" depart="1007" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_27" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="368461882#1" busStop="368461882#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="368461882#1" to="16174062#4"/>
-    <walk edges="368461882#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 25 -->
-<person id="person_27" depart="1007" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_28" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="368461882#1" busStop="368461882#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="368461882#1" to="16174062#4"/>
-    <walk edges="368461882#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 26 -->
-<person id="person_28" depart="1007" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_29" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="368461882#1" busStop="368461882#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="368461882#1" to="16174062#4"/>
-    <walk edges="368461882#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- STANDER 4 -->
-<person id="person_29" depart="1007" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_30" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="368461882#0" busStop="368461882#1" speed="1.5"/>
-    <stop busStop="368461882#1" duration="3000"/>
+    <stop busStop="368461882#1" duration="7200"/>
 </person>
 
 <!-- 10; (1263,03,03)-->
 
 <!-- RIDER 27 -->
-<person id="person_30" depart="1253" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_31" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="694268909#1" busStop="694268909#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="694268909#1" to="16174062#4"/>
-    <walk edges="694268909#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 28 -->
-<person id="person_31" depart="1253" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_32" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="694268909#1" busStop="694268909#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="694268909#1" to="16174062#4"/>
-    <walk edges="694268909#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 29 -->
-<person id="person_32" depart="1253" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_33" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="694268909#1" busStop="694268909#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="694268909#1" to="16174062#4"/>
-    <walk edges="694268909#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 11; (1297,10,02)-->
 
 <!-- RIDER 30 -->
-<person id="person_33" depart="1287" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_34" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="82694445#1" busStop="82694445#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="82694445#1" to="16174062#4"/>
-    <walk edges="82694445#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 31 -->
-<person id="person_34" depart="1287" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_35" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="82694445#1" busStop="82694445#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="82694445#1" to="16174062#4"/>
-    <walk edges="82694445#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- STANDER 5 -->
-<person id="person_35" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_36" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 6 -->
-<person id="person_36" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_37" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 7 -->
-<person id="person_37" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_38" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 8 -->
-<person id="person_38" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_39" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 9 -->
-<person id="person_39" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_40" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 10 -->
-<person id="person_40" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_41" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 11 -->
-<person id="person_41" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_42" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 <!-- STANDER 12 -->
-<person id="person_42" depart="1287" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_43" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="82694445#0" busStop="82694445#1" speed="1.5"/>
-    <stop busStop="82694445#1" duration="3000"/>
+    <stop busStop="82694445#1" duration="7200"/>
 </person>
 
 <!-- 12; (1354,01,01)-->
 
 <!-- RIDER 32 -->
-<person id="person_43" depart="1344" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_44" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="82694458#0" busStop="82694458#0" speed="1.5"/>
     <ride lines="modernjeepney_0" from="82694458#0" to="16174062#4"/>
-    <walk edges="82694458#0" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 13; (1427,11,04)-->
 
 <!-- RIDER 33 -->
-<person id="person_44" depart="1417" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_45" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="575729552#1" busStop="575729552#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="575729552#1" to="16174062#4"/>
-    <walk edges="575729552#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 34 -->
-<person id="person_45" depart="1417" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_46" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="575729552#1" busStop="575729552#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="575729552#1" to="16174062#4"/>
-    <walk edges="575729552#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 35 -->
-<person id="person_46" depart="1417" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_47" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="575729552#1" busStop="575729552#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="575729552#1" to="16174062#4"/>
-    <walk edges="575729552#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 36 -->
-<person id="person_47" depart="1417" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_48" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="575729552#1" busStop="575729552#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="575729552#1" to="16174062#4"/>
-    <walk edges="575729552#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- STANDER 13 -->
-<person id="person_48" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_49" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 <!-- STANDER 14 -->
-<person id="person_49" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_50" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 <!-- STANDER 15 -->
-<person id="person_50" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_51" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 <!-- STANDER 16 -->
-<person id="person_51" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_52" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 <!-- STANDER 17 -->
-<person id="person_52" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_53" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 <!-- STANDER 18 -->
-<person id="person_53" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_54" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 <!-- STANDER 19 -->
-<person id="person_54" depart="1417" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_55" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="575729552#0" busStop="575729552#1" speed="1.5"/>
-    <stop busStop="575729552#1" duration="3000"/>
+    <stop busStop="575729552#1" duration="7200"/>
 </person>
 
 <!-- 14; (1524,01,01)-->
 
 <!-- RIDER 37 -->
-<person id="person_55" depart="1514" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_56" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-4332734#6" busStop="-4332734#6" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-4332734#6" to="16174062#4"/>
-    <walk edges="-4332734#6" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 15; (1559,02,02)-->
 
 <!-- RIDER 38 -->
-<person id="person_56" depart="1549" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_57" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-4332734#4" busStop="-4332734#4" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-4332734#4" to="16174062#4"/>
-    <walk edges="-4332734#4" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 39 -->
-<person id="person_57" depart="1549" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_58" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-4332734#4" busStop="-4332734#4" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-4332734#4" to="16174062#4"/>
-    <walk edges="-4332734#4" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 16; (2195,03,01)-->
 
 <!-- RIDER 40 -->
-<person id="person_58" depart="2185" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_59" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="-4588647#4" busStop="-4588647#4" speed="1.5"/>
     <ride lines="modernjeepney_0" from="-4588647#4" to="16174062#4"/>
-    <walk edges="-4588647#4" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- STANDER 20 -->
-<person id="person_59" depart="2185" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_60" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="-4588647#3" busStop="-4588647#4" speed="1.5"/>
-    <stop busStop="-4588647#4" duration="3000"/>
+    <stop busStop="-4588647#4" duration="7200"/>
 </person>
 <!-- STANDER 21 -->
-<person id="person_60" depart="2185" departLane="random" departSpeed="1.00" color="1,0,0">
+<person id="person_61" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
     <walk from="-4588647#3" busStop="-4588647#4" speed="1.5"/>
-    <stop busStop="-4588647#4" duration="3000"/>
+    <stop busStop="-4588647#4" duration="7200"/>
 </person>
 
 <!-- 17; (3106,02,02)-->
 
 <!-- RIDER 41 -->
-<person id="person_61" depart="3096" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_62" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="119883577#1" busStop="119883577#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="119883577#1" to="16174062#4"/>
-    <walk edges="119883577#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 42 -->
-<person id="person_62" depart="3096" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_63" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="119883577#1" busStop="119883577#1" speed="1.5"/>
     <ride lines="modernjeepney_0" from="119883577#1" to="16174062#4"/>
-    <walk edges="119883577#1" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 <!-- 18; (3124,03,03)-->
 
 <!-- RIDER 43 -->
-<person id="person_63" depart="3114" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_64" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="119883577#4" busStop="119883577#4" speed="1.5"/>
     <ride lines="modernjeepney_0" from="119883577#4" to="16174062#4"/>
-    <walk edges="119883577#4" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 44 -->
-<person id="person_64" depart="3114" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_65" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="119883577#4" busStop="119883577#4" speed="1.5"/>
     <ride lines="modernjeepney_0" from="119883577#4" to="16174062#4"/>
-    <walk edges="119883577#4" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 <!-- RIDER 45 -->
-<person id="person_65" depart="3114" departLane="random" departSpeed="1.00" color="0,1,0">
+<person id="person_66" depart="0" departLane="random" departSpeed="1.00" color="0,1,0">
     <walk from="119883577#4" busStop="119883577#4" speed="1.5"/>
     <ride lines="modernjeepney_0" from="119883577#4" to="16174062#4"/>
-    <walk edges="119883577#4" speed="1.5"/>
+    <walk edges="16174062#4" speed="1.5"/>
 </person>
 
 </routes>
