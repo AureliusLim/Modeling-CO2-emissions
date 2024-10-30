@@ -131,12 +131,15 @@ def simulate():
         })
      
         while step <= 7200:  # Set a reasonable number of simulation steps
+           
             traci.simulationStep()
             if step % 1 == 0:   
                 co2_emissions = {}
                 for veh_id in traci.vehicle.getIDList():
-                   
-                    co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    if(veh_id == "veh_1"):
+                        print(traci.vehicle.getRoadID(veh_id)) 
+                    if(traci.vehicle.getRoadID(veh_id).startswith(":") or traci.vehicle.getRoadID(veh_id) == "-917450542" or traci.vehicle.getRoadID(veh_id) == "917450542"):
+                        co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
                     
                 with open('Emission Output/emissions.txt', 'a') as f:
                     f.write(f"Step {step}:\n")
