@@ -378,11 +378,11 @@ modify_person_xml(filename, trad_count, modern_count)
 if mode in [1, 2, 3]:
     # Assign configFile based on mode
     if mode == 1:
-        configFile = "scenario1.sumo.cfg"
+        configFile = "configs/scenario1.sumo.cfg"
     elif mode == 2:
-        configFile = "scenario2.sumo.cfg"
+        configFile = "configs/scenario2.sumo.cfg"
     elif mode == 3:
-        configFile = "scenario3.sumo.cfg"
+        configFile = "configs/scenario3.sumo.cfg"
     
     # Start SUMO and connect to TraCI (assuming your existing setup)
     sumoBinary = "sumo-gui"

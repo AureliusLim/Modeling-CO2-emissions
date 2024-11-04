@@ -309,11 +309,11 @@ configFile = ""
 if mode in [1, 2, 3]:
     # Assign configFile based on mode
     if mode == 1:
-        configFile = "faceValIntersection1.sumo.cfg"
+        configFile = "configs/faceValIntersection1.sumo.cfg"
     elif mode == 2:
-        configFile = "faceValIntersection2.sumo.cfg"
+        configFile = "configs/faceValIntersection2.sumo.cfg"
     elif mode == 3:
-        configFile = "faceValIntersection3.sumo.cfg"
+        configFile = "configs/faceValIntersection3.sumo.cfg"
     # Start SUMO and connect to TraCI (assuming your existing setup)
     sumoBinary = "sumo-gui"
     # Parse the XML file

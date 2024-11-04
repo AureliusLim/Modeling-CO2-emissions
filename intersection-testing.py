@@ -309,15 +309,15 @@ configFile = ""
 if mode in [1, 2, 3]:
     # Assign configFile based on mode
     if mode == 1:
-        configFile = "intersection1.sumo.cfg"
+        configFile = "configs/intersection1.sumo.cfg"
     elif mode == 2:
-        configFile = "intersection2.sumo.cfg"
+        configFile = "configs/intersection2.sumo.cfg"
     elif mode == 3:
-        configFile = "intersection3.sumo.cfg"
+        configFile = "configs/intersection3.sumo.cfg"
     # Start SUMO and connect to TraCI (assuming your existing setup)
     sumoBinary = "sumo-gui"
     # Parse the XML file
-    config = 'poisson' + str(mode) + '.rou.xml' 
+    config = 'vehicle_routes/poisson' + str(mode) + '.rou.xml' 
     tree = ET.parse(config)
     root = tree.getroot()
 
