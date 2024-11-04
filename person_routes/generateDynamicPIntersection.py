@@ -140,4 +140,4 @@ def generate_single_person_flow(route_file):
         f.write(prettify_element(routes))
 
 # Generate the personFlows for the given route file
-generate_single_person_flow("intersection_flows.rou.xml")
+generate_single_person_flow("person_routes/intersection_flows.rou.xml")
