@@ -65,7 +65,24 @@ def predict_next_state_with_observation(nearby_passengers):
     else:
         return hidden_state_map['Vehicle']  # Default to Vehicle (Go) state
 
+def modify_person_xml(file_path, trad_count, modern_count):
+    # Parse the existing XML
+    traditional_jeepneys = [f"jeepney_{i}" for i in range(trad_count)] 
+    modern_jeepneys = [f"modernjeepney_{i}" for i in range(modern_count)]  
 
+    # Combine into a single string with space separation
+    all_jeepney_ids = " ".join(traditional_jeepneys + modern_jeepneys)
+    tree = ET.parse(file_path)
+    root = tree.getroot()
+
+    # Loop through all <person> elements
+    for person in root.findall("person"):
+        for ride in person.findall("ride"):
+            # Modify the lines attribute to include all jeepney IDs
+            ride.set("lines", all_jeepney_ids)
+
+    # Save the modified XML back to the same file (or a new one if needed)
+    tree.write(file_path, encoding="utf-8", xml_declaration=True)
 
 
 # Global counter for passenger IDs
@@ -78,7 +95,8 @@ modern_id_list = []
 passenger_destinations = {}
 
 # Parse the XML file
-tree = ET.parse('person_routes/person_flows.rou.xml')
+filename = "person_routes/person_flows.rou.xml"
+tree = ET.parse(filename)
 root = tree.getroot()
 
 
@@ -130,7 +148,7 @@ def simulate():
             for jeepney_id in range(highest_modernjeepney_id + 1)
         })
      
-        while step <= 7200:  # Set a reasonable number of simulation steps
+        while step <= 900:  # Set a reasonable number of simulation steps
            
             traci.simulationStep()
             if step % 1 == 0:   
@@ -304,20 +322,23 @@ def simulate():
 print("[1] 7AM - 9AM\n[2] 11AM - 1PM\n[3] 4PM - 6PM")
 mode = int(input("Mode: "))
 configFile = ""
-
+word = ""
 # Validate input range
 if mode in [1, 2, 3]:
     # Assign configFile based on mode
     if mode == 1:
         configFile = "configs/faceValIntersection1.sumo.cfg"
+        word = "7-9"
     elif mode == 2:
         configFile = "configs/faceValIntersection2.sumo.cfg"
+        word = "11-1"
     elif mode == 3:
         configFile = "configs/faceValIntersection3.sumo.cfg"
+        word = "4-6"
     # Start SUMO and connect to TraCI (assuming your existing setup)
     sumoBinary = "sumo-gui"
     # Parse the XML file
-    config = 'person_flows' + str(mode) + '.rou.xml' 
+    config = 'vehicle_routes/randomJeeps' + str(word) + '.rou.xml' 
     tree = ET.parse(config)
     root = tree.getroot()
 
@@ -341,7 +362,7 @@ if mode in [1, 2, 3]:
             if modernjeepney_num > highest_modernjeepney_id:
                 highest_modernjeepney_id = modernjeepney_num
     # Proceed with SUMO initialization and other operations
-    
+    modify_person_xml(filename, highest_jeepney_id+1, highest_modernjeepney_id+1)
     print(f"Selected mode {mode}. Using configuration file: {configFile}")
 else:
     print("Invalid mode selection. Please choose between 1, 2, or 3.")

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-11-05 22:13:47.210634 by randomTrips.py v1_21_0+0000-d7b3b481c43
+<configuration>
+    <net-file value="edited.net.xml"/>
+    <additional-files value="genericVehicle.xml"/>
+    <route-file value="vehicle_routes/randomTrips_truck3.rou.xml"/>
+    <trip-attributes value="type='truck'"/>
+    <insertion-rate value="32.0 32.0"/>
+</configuration>
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <trip id="0" depart="0.00" from="187486755#0" to="-1076442002" type='truck'/>
+    <trip id="1" depart="112.50" from="-303412434" to="-28788646#0" type='truck'/>
+    <trip id="2" depart="225.00" from="29170622#2" to="24164967#0" type='truck'/>
+    <trip id="3" depart="337.50" from="704746731#0" to="-15785439#4" type='truck'/>
+    <trip id="4" depart="450.00" from="1074607188" to="-1110672544" type='truck'/>
+    <trip id="5" depart="562.50" from="-28343787#0" to="126350685#3" type='truck'/>
+    <trip id="6" depart="675.00" from="-1076360289" to="-24248490" type='truck'/>
+    <trip id="7" depart="787.50" from="22729816" to="15785418#1" type='truck'/>
+    <trip id="8" depart="900.00" from="-28343791#0" to="160192346#0" type='truck'/>
+    <trip id="9" depart="1012.50" from="421767353#3" to="-1068885503#1" type='truck'/>
+    <trip id="10" depart="1125.00" from="418206264" to="24248438#2" type='truck'/>
+    <trip id="11" depart="1237.50" from="-825090424#2" to="-191549817" type='truck'/>
+    <trip id="12" depart="1350.00" from="894595931" to="-825090424#2" type='truck'/>
+    <trip id="13" depart="1462.50" from="-15785441#4" to="-15785450#2" type='truck'/>
+    <trip id="14" depart="1575.00" from="54338767#1" to="16174062#2" type='truck'/>
+    <trip id="15" depart="1687.50" from="421767353#0" to="28788646#1" type='truck'/>
+    <trip id="16" depart="1800.00" from="154644806#0" to="917450546#0" type='truck'/>
+    <trip id="17" depart="1912.50" from="-960721731#3" to="15785423#2" type='truck'/>
+    <trip id="18" depart="2025.00" from="4588648#0" to="176435844#1" type='truck'/>
+    <trip id="19" depart="2137.50" from="575729108#1" to="15785466" type='truck'/>
+    <trip id="20" depart="2250.00" from="24509303#3" to="-12255029#0" type='truck'/>
+    <trip id="21" depart="2362.50" from="-28788646#1" to="-4478182" type='truck'/>
+    <trip id="22" depart="2475.00" from="-15785418#7" to="-29170628#0" type='truck'/>
+    <trip id="23" depart="2587.50" from="-15785450#5" to="-368461882#1" type='truck'/>
+    <trip id="24" depart="2700.00" from="182972260" to="-924607338" type='truck'/>
+    <trip id="25" depart="2812.50" from="-925826461" to="-255984631#0" type='truck'/>
+    <trip id="26" depart="2925.00" from="-303412427#4" to="825090434#1" type='truck'/>
+    <trip id="27" depart="3037.50" from="20816626#0" to="161754855#0" type='truck'/>
+    <trip id="28" depart="3150.00" from="-22751310#2" to="28788646#1" type='truck'/>
+    <trip id="29" depart="3262.50" from="-22751216#3" to="1035321070#1" type='truck'/>
+    <trip id="30" depart="3375.00" from="945948203" to="187486755#1" type='truck'/>
+    <trip id="31" depart="3487.50" from="15785439#1" to="24247758#1" type='truck'/>
+</routes>

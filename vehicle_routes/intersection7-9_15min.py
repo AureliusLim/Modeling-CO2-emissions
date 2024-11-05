@@ -13,9 +13,9 @@ intersection3_startedges = ['704746731#0', '-5019469#5', '119883577#7']
 
 # Vehicle counts by type at each intersection
 vehicle_counts = {
-    'intersection1': {'bicycle': 71, 'bus': 0, 'car': 238, 'motorcycle': 699, 'truck': 31, 'traditional_jeepney': 10, 'modern_jeepney': 5},
-    'intersection2': {'bicycle': 36, 'bus': 0, 'car': 369, 'motorcycle': 720, 'truck': 45, 'traditional_jeepney': 10, 'modern_jeepney': 5},
-    'intersection3': {'bicycle': 46, 'bus': 0, 'car': 168, 'motorcycle': 408, 'truck': 38, 'traditional_jeepney': 10, 'modern_jeepney': 5},
+    'intersection1': {'bicycle': 71, 'bus': 0, 'car': 238, 'motorcycle': 699, 'truck': 31, 'traditional_jeepney': 85, 'modern_jeepney': 11},
+    'intersection2': {'bicycle': 46, 'bus': 0, 'car': 168, 'motorcycle': 408, 'truck': 38, 'traditional_jeepney': 69, 'modern_jeepney': 12},
+    'intersection3': {'bicycle': 36, 'bus': 0, 'car': 369, 'motorcycle': 720, 'truck': 45, 'traditional_jeepney': 55, 'modern_jeepney': 8},
 }
 
 # Define mappings of intersection start edges
@@ -54,7 +54,8 @@ traci.start([sumo_binary, "-n", "edited.net.xml"])
 vehicle_routes = []
 jeepney_trips = []  # Separate list for jeepney trips
 network_edges = [edge.getID() for edge in net.getEdges()]
-
+trad_count = -1
+modern_count = -1
 # Create routes for each intersection
 for intersection, counts in vehicle_counts.items():
     edges = intersection_edges[intersection]
@@ -64,11 +65,20 @@ for intersection, counts in vehicle_counts.items():
     
             if vehicle_type in ['traditional_jeepney', 'modern_jeepney']:
                 # Use fixed end edge for jeepneys (for duarouter)
+                if vehicle_type == 'traditional_jeepney':
+                    name = "jeepney_"
+                    trad_count += 1
+                    number = trad_count
+                elif vehicle_type == 'modern_jeepney':
+                    name = 'modernjeepney_'
+                    modern_count += 1
+                    number = modern_count
+
                 start_edge = random.choice(jeep_start)
                 end_edge = get_distant_edge(start_edge)  # Define as appropriate for jeepney routes
                 depart_time = random.randint(0, 850)
                 jeepney_trips.append({
-                    'id': f"{vehicle_type}_{intersection}_{i}",
+                    'id': f"{name}{number}",
                     'type': vehicle_type,
                     'depart': depart_time,
                     'from': start_edge,
@@ -91,7 +101,17 @@ vehicle_routes.sort(key=lambda v: v['depart'])
 jeepney_trips.sort(key=lambda v: v['depart'])
 
 # Generate XML route structure
-routes = etree.Element('routes')
+routes = etree.Element(
+    'routes',
+    nsmap={
+        'xsi': 'http://www.w3.org/2001/XMLSchema-instance'
+    }
+)
+# Set the schema location attribute
+routes.set(
+    '{http://www.w3.org/2001/XMLSchema-instance}noNamespaceSchemaLocation',
+    'http://sumo.dlr.de/xsd/routes_file.xsd'
+)
 for vehicle in vehicle_routes:
     # Define vehicle and route in XML with sorted order
     vehicle_elem = etree.SubElement(routes, 'vehicle', id=vehicle['id'], type=vehicle['type'],
@@ -119,4 +139,4 @@ tree = etree.ElementTree(routes)
 tree.write("vehicle_routes/randomRoutes7-9.xml", pretty_print=True, xml_declaration=True, encoding='UTF-8')
 
 jeepney_tree = etree.ElementTree(jeepney_trips_xml)
-jeepney_tree.write("vehicle_routes/jeepneyTrips7-9.xml", pretty_print=True, xml_declaration=True, encoding='UTF-8')
+jeepney_tree.write("vehicle_routes/jeepneyTrips7-9.rou.xml", pretty_print=True, xml_declaration=True, encoding='UTF-8')
