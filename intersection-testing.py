@@ -156,56 +156,56 @@ def simulate():
                 for veh_id in traci.vehicle.getIDList():
                     # if veh_id == "veh_31":
                     #     print(traci.vehicle.getLanePosition("veh_31"))
-                    if traci.vehicle.getRoadID(veh_id) == "-4588647":
-                        halfway_point = 212.83 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point <= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id) 
+                    # if traci.vehicle.getRoadID(veh_id) == "-4588647":
+                    #     halfway_point = 212.83 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point <= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id) 
 
-                    if traci.vehicle.getRoadID(veh_id) == "4588647":
-                        halfway_point = 212.83 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point >= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "4588647":
+                    #     halfway_point = 212.83 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point >= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
 
-                    if traci.vehicle.getRoadID(veh_id) == "1112806233":
-                        halfway_point = 140.62 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point <= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "1112806233":
+                    #     halfway_point = 140.62 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point <= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
 
-                    if traci.vehicle.getRoadID(veh_id) == "775437708":
-                        halfway_point = 148.37 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point <= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "775437708":
+                    #     halfway_point = 148.37 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point <= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
 
-                    if traci.vehicle.getRoadID(veh_id) == "1174874706":
-                        halfway_point = 81.05 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point >= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "1174874706":
+                    #     halfway_point = 81.05 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point >= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
                     
-                    if traci.vehicle.getRoadID(veh_id) == "136822578":
-                        halfway_point = 198.25 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point <= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "136822578":
+                    #     halfway_point = 198.25 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point <= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
 
-                    if traci.vehicle.getRoadID(veh_id) == "917450543":
-                        halfway_point = 180.92 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point >= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "917450543":
+                    #     halfway_point = 180.92 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point >= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
                     
-                    if traci.vehicle.getRoadID(veh_id) == "160192389":
-                        halfway_point = 177.73 / 2
-                        vehicle_position = traci.vehicle.getLanePosition(veh_id)
-                        if halfway_point <= vehicle_position:
-                            co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
+                    # if traci.vehicle.getRoadID(veh_id) == "160192389":
+                    #     halfway_point = 177.73 / 2
+                    #     vehicle_position = traci.vehicle.getLanePosition(veh_id)
+                    #     if halfway_point <= vehicle_position:
+                    #         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
                     
                         
-                    if(traci.vehicle.getRoadID(veh_id).startswith(":") or traci.vehicle.getRoadID(veh_id) == "-917450542" or traci.vehicle.getRoadID(veh_id) == "917450542"):
+                    if(traci.vehicle.getRoadID(veh_id).startswith(":") or traci.vehicle.getRoadID(veh_id) == "-917450542" or traci.vehicle.getRoadID(veh_id) == "917450542" or traci.vehicle.getRoadID(veh_id) == "617559628"):
                         co2_emissions[veh_id] = traci.vehicle.getCO2Emission(veh_id)
                     
                 with open('Emission Output/emissions.txt', 'a') as f:

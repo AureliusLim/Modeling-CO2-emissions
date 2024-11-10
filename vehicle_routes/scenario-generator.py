@@ -31,7 +31,7 @@ def get_valid_end_edge(start_edge):
 
 
 data = []
-with open("vehicle_routes/validationmodern11-1.csv", mode="r") as file:
+with open("vehicle_routes/validationtrad11-1.csv", mode="r") as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
         entry = [
