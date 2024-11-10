@@ -42,12 +42,12 @@
     
     <person id="person_9" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
         <walk from="29377703#4" busStop="29377703#4" speed="1.5" />
-        <ride lines="jeepney_0" from="29377703#4" to="82694445#1" duration="10" />
+        <ride lines="jeepney_0" from="29377703#4" to="82694445#1" />
         <walk edges="82694445#1" speed="1.5" />
     </person>
     <person id="person_10" depart="0" departLane="random" departSpeed="1.00" color="1,0,0">
         <walk from="29377703#4" busStop="29377703#4" speed="1.5" />
-        <ride lines="jeepney_0" from="29377703#4" to="82694445#1" duration="10" />
+        <ride lines="jeepney_0" from="29377703#4" to="82694445#1" />
         <walk edges="82694445#1" speed="1.5" />
     </person>
 
