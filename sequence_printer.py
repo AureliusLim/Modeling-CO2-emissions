@@ -25,8 +25,8 @@ def print_state_occurrences_by_load(sequences):
         # Print hidden state occurrences
         print(f"Occurrences of hidden states for Passenger Load '{load_name}':")
         print(pd.Series(hidden_states).value_counts().sort_index())
-csv_files_path = 'validation/actual/trad/*.csv'
-
+#csv_files_path = 'validation/actual/trad/*.csv'
+csv_files_path = 'validation/simulation/modern/*.csv'
 # Get a list of all CSV files in the directory
 csv_files = glob.glob(csv_files_path)
 

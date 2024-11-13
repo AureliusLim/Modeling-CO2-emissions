@@ -86,7 +86,7 @@ def generate_single_person_flow(route_file):
     # Generate individual passengers
     person_id_counter = 1
     people = []
-    for _ in range(600):  # Adjust the number of passengers if needed
+    for _ in range(1000):  # Adjust the number of passengers if needed
         passenger_type = random.choice(['rider', 'stander', 'walker'])
         #passenger_type = 'stander'
         depart_time = random.randint(0, 500)
@@ -199,4 +199,4 @@ def generate_single_person_flow(route_file):
         f.write(prettify_element(routes))
 
 # Generate the personFlows for the given route file
-generate_single_person_flow("person_flows.rou.xml")
+generate_single_person_flow("person_routes/person_flows.rou.xml")
