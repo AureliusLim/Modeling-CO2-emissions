@@ -56,4 +56,5 @@ co2_by_minute = calculate_avg_co2_emissions(emissions_data)
 
 # Output the results
 for minute_data in co2_by_minute:
-    print(f"Interval {minute_data['Interval']}: Average CO2 = {minute_data['Average_CO2']} mg")
+    #print(f"Interval {minute_data['Interval']}: Average CO2 = {minute_data['Average_CO2']} mg")
+    print(f"{minute_data['Average_CO2']/1000}")

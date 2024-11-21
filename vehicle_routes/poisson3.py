@@ -13,13 +13,27 @@ network_edges = ["1174874706", "-917450542", "-4588647", "1112806233", "77543770
 def get_random_route_jeep(route_1, route_2):
     """Assign route_1 or route_2 randomly to jeepneys"""
     return random.choice([route_1, route_2])
-def get_random_edges_with_validation(network_edges):
-    while True:
-        start_edge, end_edge = random.sample(network_edges, 2)
-        route = traci.simulation.findRoute(start_edge, end_edge)
-        if len(route.edges) > 0:  # Ensure the route is valid
-            return " ".join(route.edges)
+def get_random_route_other(other_routes):
+    """Randomly choose a route from other_routes dictionary with lower probability for r_1 and r_2."""
+    # Define weights for each route, lower weight for r_1 and r_2
+    route_weights = {
+        "r_1": 0.01, 
+        "r_2": 0.01,  
+        "r_3": 0.05,  
+        "r_4": 0.05,  
+        "r_5": 0.44, 
+        "r_6": 0.44   
+    }
+    
+    # Normalize weights and select a route based on probability
+    routes = list(other_routes.values())
+    keys = list(other_routes.keys())
+    probabilities = [route_weights[key] for key in keys]
+    probabilities = [p / sum(probabilities) for p in probabilities]  # Ensure probabilities sum to 1
 
+    # Randomly choose a route based on weights
+    selected_route = random.choices(routes, probabilities)[0]
+    return selected_route
 # (replace with actual vehicle count data)
 vehicle_counts_per_interval = {
     "car": [44, 47, 48, 55, 46, 43, 54, 52, 53, 47, 44, 49, 40, 55, 59, 60, 58, 64, 59, 61, 55, 53, 50, 52],
@@ -40,7 +54,15 @@ jeepney_routes = {
     "r_1": "-4588647 -917450542 1174874706",
     "r_2": "1112806233 4588647"
 }
+other_routes = {
+    "r_1": "-4588647 -917450542 1174874706",
+    "r_2": "-4588647 160192389",
+    "r_3": "1112806233 160192389",
+    "r_4": "1112806233 4588647",
+    "r_5": "775437708 917450543",
+    "r_6": "136822578 1174874706"
 
+}
 # Create the root element <routes>
 root = ET.Element("routes", {
     "xmlns:xsi": "http://www.w3.org/2001/XMLSchema-instance",
@@ -91,7 +113,7 @@ for interval_index, (start_time, end_time) in enumerate(time_intervals):
                         route_edges = get_random_route_jeep(jeepney_routes["r_1"], jeepney_routes["r_2"])
                     else:
                         # For other vehicle types, assign random valid edges from the network
-                        route_edges = get_random_edges_with_validation(network_edges)
+                        route_edges = get_random_route_other(other_routes)
 
                     vehicle_data["route"] = route_edges
                     vehicles_list.append(vehicle_data)
@@ -112,7 +134,7 @@ for vehicle_data in vehicles_list:
 xml_str = ET.tostring(root, encoding='utf-8').decode()
 formatted_xml = minidom.parseString(xml_str).toprettyxml(indent="    ")
 
-with open("person_routes/poisson3.rou.xml", "w") as f:
+with open("vehicle_routes/poisson3.rou.xml", "w") as f:
     f.write(formatted_xml)
 
 # Close the SUMO instance
