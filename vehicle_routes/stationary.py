@@ -53,7 +53,7 @@ with open('Emission Output/emissions.txt', 'a') as f:
 
             elif current_state == "rev":
                 # Revving phase
-                traci.vehicle.setSpeed(vehicle_id, 11.11)  # Simulate revving
+                traci.vehicle.setSpeed(vehicle_id, 13.88)  # Simulate revving
                 if step >= end_time:  # Transition to done
                     vehicle_states[vehicle_id]["state"] = "done"
 

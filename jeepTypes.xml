@@ -140,7 +140,8 @@
 	<inductionLoop id="intersection#3_8_truck" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="truck"/>
 	<inductionLoop id="intersection#3_8_motorcycle" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="motorcycle"/>
 	<inductionLoop id="intersection#3_8_bicycle" lane="435468253#2_1" pos="6" period="7200" file="out3.xml" VTypes="bicycle"/>
-
+<!-- HBEFA4/LCV_diesel_N1-III_Euro-2
+HBEFA4/LCV_diesel_N1-III_Euro-4 -->
 	<vType id="traditional_jeepney" 
        line="trad_line" accel="1.0" decel="3.5" sigma="0.5" 
        length="7" minGap="1.5" maxSpeed="7" 
@@ -149,7 +150,7 @@
 	<vType id="modern_jeepney"
        line="trad_line" accel="1.2" decel="5.0" sigma="0.5" 
        length="8" minGap="1.5" maxSpeed="9" 
-       color="0,0,1" emissionClass="HBEFA4/LCV_diesel_N1-III_Euro-4" personCapacity="24" />
+       color="0,0,1" emissionClass="HBEFA4/LCV_PHEV_diesel_N1-III_Euro-5_(D)" personCapacity="24" />
     <!-- <busStop id="jposadas" lane="29377703#2_1" startPos="0.0" endPos="10.0"/>
     <busStop id="quiapo" lane="16174062#4_1" startPos="0.0" endPos="10.0"/> -->
 
