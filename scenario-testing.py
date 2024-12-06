@@ -196,7 +196,7 @@ traditional_id_list = []
 modern_id_list = []
 passenger_destinations = {}
 filename = ""
-print("[1] 7AM - 9AM\n[2] 11AM - 1PM\n[3] 4PM - 6PM")
+print("\n[1] 7AM - 9AM\n[2] 11AM - 1PM\n[3] 4PM - 6PM")
 mode = int(input("Mode: "))
 if mode == 1:
     filename = "person_routes/person_flows7-9.rou.xml"
